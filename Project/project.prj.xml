@@ -45,7 +45,18 @@
    <ColorMapEntry val="-90.0" r="0" g="128" b="0" symbol="SOLID"/>
    <ColorMapEntry val="-90.0" r="128" g="128" b="128" symbol="SOLID"/>
   </ColorMap>
-  <ColorMap size="0"/>
+  <ColorMap size="10">
+   <ColorMapEntry val="1.057" r="255" g="0" b="0" symbol="SOLID"/>
+   <ColorMapEntry val="0.9396" r="241" g="54" b="0" symbol="SOLID"/>
+   <ColorMapEntry val="0.8221000000000001" r="227" g="101" b="0" symbol="SOLID"/>
+   <ColorMapEntry val="0.7047000000000001" r="213" g="142" b="0" symbol="SOLID"/>
+   <ColorMapEntry val="0.5872000000000001" r="199" g="176" b="0" symbol="SOLID"/>
+   <ColorMapEntry val="0.4698" r="164" g="184" b="0" symbol="SOLID"/>
+   <ColorMapEntry val="0.3523" r="114" g="170" b="0" symbol="SOLID"/>
+   <ColorMapEntry val="0.2349" r="69" g="156" b="0" symbol="SOLID"/>
+   <ColorMapEntry val="0.1174" r="32" g="142" b="0" symbol="SOLID"/>
+   <ColorMapEntry val="0.0" r="0" g="128" b="0" symbol="SOLID"/>
+  </ColorMap>
   <ColorMap size="10">
    <ColorMapEntry val="100.0" r="255" g="255" b="0" symbol="SOLID"/>
    <ColorMapEntry val="90.0" r="255" g="0" b="0" symbol="SOLID"/>
@@ -58,7 +69,18 @@
    <ColorMapEntry val="20.0" r="255" g="0" b="255" symbol="SOLID"/>
    <ColorMapEntry val="10.0" r="64" g="0" b="64" symbol="SOLID"/>
   </ColorMap>
-  <ColorMap size="0"/>
+  <ColorMap size="10">
+   <ColorMapEntry val="4552.3" r="0" g="0" b="255" symbol="SOLID"/>
+   <ColorMapEntry val="3983.7" r="28" g="28" b="255" symbol="SOLID"/>
+   <ColorMapEntry val="3415.0" r="56" g="56" b="255" symbol="SOLID"/>
+   <ColorMapEntry val="2846.3" r="85" g="85" b="255" symbol="SOLID"/>
+   <ColorMapEntry val="2277.7" r="113" g="113" b="255" symbol="SOLID"/>
+   <ColorMapEntry val="1709.0" r="141" g="141" b="255" symbol="SOLID"/>
+   <ColorMapEntry val="1140.3" r="170" g="170" b="255" symbol="SOLID"/>
+   <ColorMapEntry val="571.7000000000001" r="198" g="198" b="255" symbol="SOLID"/>
+   <ColorMapEntry val="3.0" r="226" g="226" b="255" symbol="SOLID"/>
+   <ColorMapEntry val="3.0" r="255" g="255" b="255" symbol="CIRCLE"/>
+  </ColorMap>
   <ColorMap size="10">
    <ColorMapEntry val="100.0" r="255" g="255" b="0" symbol="SOLID"/>
    <ColorMapEntry val="90.0" r="255" g="0" b="0" symbol="SOLID"/>
@@ -95,7 +117,18 @@
    <ColorMapEntry val="0.1" r="181" g="106" b="255" symbol="SOLID"/>
    <ColorMapEntry val="0.05" r="170" g="0" b="170" symbol="SOLID"/>
   </ColorMap>
-  <ColorMap size="0"/>
+  <ColorMap size="10">
+   <ColorMapEntry val="4552.3" r="0" g="0" b="255" symbol="SOLID"/>
+   <ColorMapEntry val="3983.7" r="28" g="28" b="255" symbol="SOLID"/>
+   <ColorMapEntry val="3415.0" r="56" g="56" b="255" symbol="SOLID"/>
+   <ColorMapEntry val="2846.3" r="85" g="85" b="255" symbol="SOLID"/>
+   <ColorMapEntry val="2277.7" r="113" g="113" b="255" symbol="SOLID"/>
+   <ColorMapEntry val="1709.0" r="141" g="141" b="255" symbol="SOLID"/>
+   <ColorMapEntry val="1140.3" r="170" g="170" b="255" symbol="SOLID"/>
+   <ColorMapEntry val="571.7000000000001" r="198" g="198" b="255" symbol="SOLID"/>
+   <ColorMapEntry val="3.0" r="226" g="226" b="255" symbol="SOLID"/>
+   <ColorMapEntry val="3.0" r="255" g="255" b="255" symbol="NO_SYMBOL"/>
+  </ColorMap>
   <ColorMap size="0"/>
  </ColorMapVector>
  <ATAInfoVector size="1">
@@ -143,13 +176,13 @@
   </DataGridOptions>
  </LinkDetailsOptions>
  <PROJECT_PANE_TREE size="9">
-  <TreeNode NodeType="RFSystems" NodeText="RF Systems" state="66"/>
-  <TreeNode NodeType="Site" NodeText="Transmitter/Base/Hub/Router Sites" state="0"/>
-  <TreeNode NodeType="Link" NodeText="Link Systems" state="0"/>
-  <TreeNode NodeType="Views" NodeText="Map Views" state="64"/>
+  <TreeNode NodeType="RFSystems" NodeText="RF Systems" state="2"/>
+  <TreeNode NodeType="Site" NodeText="Transmitter/Base/Hub/Router Sites" state="4096"/>
+  <TreeNode NodeType="Link" NodeText="Link Systems" state="4096"/>
+  <TreeNode NodeType="Views" NodeText="Map Views" state="96"/>
   <TreeNode NodeType="MapView" NodeText="initial view" state="96"/>
-  <TreeNode NodeType="MapViewLayer" NodeText="Map Layers" state="64"/>
-  <TreeNode NodeType="MapViewAreaStudy" NodeText="Area Studies" state="0"/>
+  <TreeNode NodeType="MapViewLayer" NodeText="Map Layers" state="96"/>
+  <TreeNode NodeType="MapViewAreaStudy" NodeText="Area Studies" state="96"/>
   <TreeNode NodeType="MapViewRteAreaStudy" NodeText="Route Studies" state="0"/>
   <TreeNode NodeType="MapViewMptStudy" NodeText="Multipoint Studies" state="0"/>
  </PROJECT_PANE_TREE>

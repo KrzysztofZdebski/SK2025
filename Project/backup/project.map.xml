@@ -2,8 +2,8 @@
 <ViewFile Version="8.4.0">
  <Print paper_size="1" default_source="7" orientation="2" left_margin="500" right_margin="500" top_margin="750" bottom_margin="500" driver="winspool" device="hp deskjet 970c series" output="lpt1:"/>
  <Views size="1" last_active="0">
-  <View name="initial view" top="-23" left="-4" width="1782" height="1109" show="true" maximized="true">
-   <ProjectedCoordinateSystem map_center_latitude="44.05184349533508" map_center_longitude="-123.1565093927995" data_entry_display_type="lat/long: deg/min/sec" projected_coordinate_system="Latitude/Longitude" projection="Transverse Mercator" datum="WGS 84"/>
+  <View name="initial view" top="-23" left="-4" width="2259" height="949" show="true" maximized="true">
+   <ProjectedCoordinateSystem map_center_latitude="44.04258693358304" map_center_longitude="-123.0752709821683" data_entry_display_type="lat/long: deg/min/sec" projected_coordinate_system="Latitude/Longitude" projection="Transverse Mercator" datum="WGS 84"/>
    <MapTitle title="EDX Wireless" subtitle="Smart Planning for Smart Networks" date="" exhibit="" use_cur_date="false"/>
    <RefGrid reference="grid lines" spacing="30&apos;" show_annotations="true">
     <PenDesc>
@@ -76,7 +76,7 @@
     </BorderPenDesc>
    </MapPref>
    <AreaStudies last_selected_index="1" ui_track_index="0" size="1">
-    <AreaStudy group_identifier="Master group" second_group_identifier="Master group" group_id2="0" area_study_type="5" plot_type="flat grid" calc_method="radial line" noise_interference_type="noise and interference" calculate_study="true" use_uplink_independent_calc="false" notes="" receive_unit_id="0" study_display_type="color gradient" FCC_show_contour_labels="true" FCC_show_contour_txnames="true" FCC_contour_line_width="0.5" signal_contour_line_width="0.5" radial_line_width="0.5" effective_display_height="0.0" effective_display_height_use_mobile_height="false" grid_edge_display="1.0" grid_lines_signal_only="false" signal_level_display_threshold="-120.0" show_remote_on_legend_="true" control_mls_using_approx_range="false" control_using_sector_study_radius="false" include_interfering_remote="true" include_base_to_base_interference="false" maximum_number_interfering_sectors="6" link_reliability_name="Reliability Method 1" use_MIMO_adjustments="true" fresnel_zone_clearance="0.6" use_filter_polygon="false" filter_file_name="" use_channel_color_mls="false">
+    <AreaStudy group_identifier="Master group" second_group_identifier="Master group" group_id2="0" area_study_type="10" plot_type="flat grid" calc_method="radial line" noise_interference_type="noise and interference" calculate_study="true" use_uplink_independent_calc="false" notes="" receive_unit_id="0" study_display_type="composite grid" FCC_show_contour_labels="true" FCC_show_contour_txnames="true" FCC_contour_line_width="0.5" signal_contour_line_width="0.5" radial_line_width="0.5" effective_display_height="0.0" effective_display_height_use_mobile_height="false" grid_edge_display="1.0" grid_lines_signal_only="false" signal_level_display_threshold="-120.0" show_remote_on_legend_="true" control_mls_using_approx_range="false" control_using_sector_study_radius="false" include_interfering_remote="true" include_base_to_base_interference="false" maximum_number_interfering_sectors="6" link_reliability_name="Reliability Method 1" use_MIMO_adjustments="true" fresnel_zone_clearance="0.6" use_filter_polygon="false" filter_file_name="" use_channel_color_mls="false">
      <FCC_contour_label_font>
       <Font font_name="Arial" point_size="8" orientation_angle="0.0" style_flags_="0">
        <fore_color>
@@ -85,653 +85,27 @@
       </Font>
      </FCC_contour_label_font>
      <area_studies_flat_grid_color>
-      <AnnotatedColorMap size="10">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="5">
-        <ColorMapEntry val="-60.0" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-70.0" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-80.0" r="0" g="255" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="-90.0" r="0" g="128" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-90.0" r="128" g="128" b="128" symbol="SOLID"/>
-       </ColorMap>
+      <AnnotatedColorMap size="0">
+       <ColorMap size="0"/>
       </AnnotatedColorMap>
      </area_studies_flat_grid_color>
      <area_studies_contour_color>
-      <AnnotatedColorMap size="10">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="10">
-        <ColorMapEntry val="200.0" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="160.0" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="120.0" r="0" g="255" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="70.0" r="0" g="128" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="30.0" r="128" g="128" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="-20.0" r="0" g="0" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="-60.0" r="0" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-110.0" r="255" g="128" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-150.0" r="255" g="0" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="-200.0" r="64" g="0" b="64" symbol="SOLID"/>
-       </ColorMap>
+      <AnnotatedColorMap size="0">
+       <ColorMap size="0"/>
       </AnnotatedColorMap>
      </area_studies_contour_color>
      <area_studies_gradient_color>
-      <AnnotatedColorMap size="10">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="5">
-        <ColorMapEntry val="-60.0" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-70.0" r="70" g="238" b="22" symbol="SOLID"/>
-        <ColorMapEntry val="-80.0" r="41" g="221" b="140" symbol="SOLID"/>
-        <ColorMapEntry val="-90.0" r="57" g="155" b="203" symbol="SOLID"/>
-        <ColorMapEntry val="-90.0" r="81" g="69" b="186" symbol="SOLID"/>
-       </ColorMap>
+      <AnnotatedColorMap size="0">
+       <ColorMap size="0"/>
       </AnnotatedColorMap>
      </area_studies_gradient_color>
     </AreaStudy>
    </AreaStudies>
-   <RouteStudies last_selected_index="1" ui_track_index="0" size="1">
-    <AreaStudy group_identifier="Master group" second_group_identifier="Master group" group_id2="0" area_study_type="5" plot_type="flat grid" calc_method="route study" noise_interference_type="noise and interference" calculate_study="true" use_uplink_independent_calc="false" notes="" receive_unit_id="0" study_display_type="composite grid" FCC_show_contour_labels="true" FCC_show_contour_txnames="true" FCC_contour_line_width="0.5" signal_contour_line_width="0.5" radial_line_width="0.5" effective_display_height="0.0" effective_display_height_use_mobile_height="false" grid_edge_display="1.0" grid_lines_signal_only="false" signal_level_display_threshold="-120.0" show_remote_on_legend_="true" control_mls_using_approx_range="false" control_using_sector_study_radius="false" include_interfering_remote="true" include_base_to_base_interference="false" maximum_number_interfering_sectors="6" link_reliability_name="Reliability Method 1" use_MIMO_adjustments="true" fresnel_zone_clearance="0.6" use_filter_polygon="false" filter_file_name="" use_channel_color_mls="false" line_width="1.5" use_symbol="false">
-     <route_study_symbol>
-      <Symbol shape="35" point_size="15">
-       <color>
-        <Color r="0" g="0" b="0"/>
-       </color>
-      </Symbol>
-     </route_study_symbol>
-     <FCC_contour_label_font>
-      <Font font_name="Arial" point_size="8" orientation_angle="0.0" style_flags_="0">
-       <fore_color>
-        <Color r="0" g="0" b="0"/>
-       </fore_color>
-      </Font>
-     </FCC_contour_label_font>
-     <area_studies_flat_grid_color>
-      <AnnotatedColorMap size="6">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="6">
-        <ColorMapEntry val="-60.0" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-70.0" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-80.0" r="0" g="0" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="-90.0" r="0" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-100.0" r="128" g="128" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="-100.0" r="192" g="192" b="192" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_flat_grid_color>
-     <area_studies_contour_color>
-      <AnnotatedColorMap size="6">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="6">
-        <ColorMapEntry val="-60.0" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-70.0" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-80.0" r="0" g="0" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="-90.0" r="0" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-100.0" r="128" g="128" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="-100.0" r="192" g="192" b="192" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_contour_color>
-     <area_studies_gradient_color>
-      <AnnotatedColorMap size="6">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="6">
-        <ColorMapEntry val="-60.0" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-70.0" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-80.0" r="0" g="0" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="-90.0" r="0" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-100.0" r="128" g="128" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="-100.0" r="192" g="192" b="192" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_gradient_color>
-    </AreaStudy>
+   <RouteStudies last_selected_index="1" ui_track_index="-1" size="0">
     <RouteStudyParms study_route_filename="&lt;INSTALL_PATH&gt;\SAMPLE DATA\BIG_EUGENE_DRIVE_TEST.BNA" route_point_spacing="0.1" interpolate_points_along_route="true" use_remote="true" use_study_limit="false"/>
    </RouteStudies>
-   <MultipointStudies last_selected_index="1" ui_track_index="0" use_assigned_server="true" size="7">
-    <AreaStudy group_identifier="Master group" second_group_identifier="Master group" group_id2="0" area_study_type="315" plot_type="flat grid" calc_method="multipoint study" noise_interference_type="noise and interference" calculate_study="true" use_uplink_independent_calc="false" notes="" receive_unit_id="0" study_display_type="composite grid" FCC_show_contour_labels="true" FCC_show_contour_txnames="true" FCC_contour_line_width="0.5" signal_contour_line_width="0.5" radial_line_width="0.5" effective_display_height="0.0" effective_display_height_use_mobile_height="false" grid_edge_display="1.0" grid_lines_signal_only="false" signal_level_display_threshold="-120.0" show_remote_on_legend_="true" control_mls_using_approx_range="false" control_using_sector_study_radius="false" include_interfering_remote="true" include_base_to_base_interference="false" maximum_number_interfering_sectors="6" link_reliability_name="Reliability Method 1" use_MIMO_adjustments="true" fresnel_zone_clearance="0.6" use_filter_polygon="false" filter_file_name="" use_channel_color_mls="false" use_symbol="false">
-     <route_study_symbol>
-      <Symbol shape="35" point_size="15">
-       <color>
-        <Color r="0" g="0" b="0"/>
-       </color>
-      </Symbol>
-     </route_study_symbol>
-     <FCC_contour_label_font>
-      <Font font_name="Arial" point_size="8" orientation_angle="0.0" style_flags_="0">
-       <fore_color>
-        <Color r="0" g="0" b="0"/>
-       </fore_color>
-      </Font>
-     </FCC_contour_label_font>
-     <area_studies_flat_grid_color>
-      <AnnotatedColorMap size="6">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="6">
-        <ColorMapEntry val="3.0" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="2.0" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="1.0" r="0" g="0" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="0.5" r="0" g="255" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="0.0" r="0" g="255" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="0.0" r="192" g="192" b="192" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_flat_grid_color>
-     <area_studies_contour_color>
-      <AnnotatedColorMap size="6">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="6">
-        <ColorMapEntry val="3.0" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="2.0" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="1.0" r="0" g="0" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="0.5" r="0" g="255" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="0.0" r="0" g="255" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="0.0" r="192" g="192" b="192" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_contour_color>
-     <area_studies_gradient_color>
-      <AnnotatedColorMap size="6">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="6">
-        <ColorMapEntry val="3.0" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="2.0" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="1.0" r="0" g="0" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="0.5" r="0" g="255" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="0.0" r="0" g="255" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="0.0" r="192" g="192" b="192" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_gradient_color>
-    </AreaStudy>
-    <AreaStudy group_identifier="Master group" second_group_identifier="Master group" group_id2="0" area_study_type="5" plot_type="flat grid" calc_method="multipoint study" noise_interference_type="noise and interference" calculate_study="true" use_uplink_independent_calc="false" notes="" receive_unit_id="0" study_display_type="composite grid" FCC_show_contour_labels="true" FCC_show_contour_txnames="true" FCC_contour_line_width="0.5" signal_contour_line_width="0.5" radial_line_width="0.5" effective_display_height="0.0" effective_display_height_use_mobile_height="false" grid_edge_display="1.0" grid_lines_signal_only="false" signal_level_display_threshold="-120.0" show_remote_on_legend_="true" control_mls_using_approx_range="false" control_using_sector_study_radius="false" include_interfering_remote="true" include_base_to_base_interference="false" maximum_number_interfering_sectors="6" link_reliability_name="Reliability Method 1" use_MIMO_adjustments="true" fresnel_zone_clearance="0.6" use_filter_polygon="false" filter_file_name="" use_channel_color_mls="false" use_symbol="false">
-     <route_study_symbol>
-      <Symbol shape="35" point_size="15">
-       <color>
-        <Color r="0" g="0" b="0"/>
-       </color>
-      </Symbol>
-     </route_study_symbol>
-     <FCC_contour_label_font>
-      <Font font_name="Arial" point_size="8" orientation_angle="0.0" style_flags_="0">
-       <fore_color>
-        <Color r="0" g="0" b="0"/>
-       </fore_color>
-      </Font>
-     </FCC_contour_label_font>
-     <area_studies_flat_grid_color>
-      <AnnotatedColorMap size="6">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="6">
-        <ColorMapEntry val="-60.0" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-70.0" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-80.0" r="0" g="0" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="-90.0" r="0" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-100.0" r="128" g="128" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="-100.0" r="192" g="192" b="192" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_flat_grid_color>
-     <area_studies_contour_color>
-      <AnnotatedColorMap size="6">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="6">
-        <ColorMapEntry val="-60.0" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-70.0" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-80.0" r="0" g="0" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="-90.0" r="0" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-100.0" r="128" g="128" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="-100.0" r="192" g="192" b="192" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_contour_color>
-     <area_studies_gradient_color>
-      <AnnotatedColorMap size="6">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="6">
-        <ColorMapEntry val="-60.0" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-70.0" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-80.0" r="0" g="0" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="-90.0" r="0" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-100.0" r="128" g="128" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="-100.0" r="192" g="192" b="192" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_gradient_color>
-    </AreaStudy>
-    <AreaStudy group_identifier="Master group" second_group_identifier="Master group" group_id2="0" area_study_type="12" plot_type="flat grid" calc_method="multipoint study" noise_interference_type="noise and interference" calculate_study="true" use_uplink_independent_calc="false" notes="" receive_unit_id="0" study_display_type="composite grid" FCC_show_contour_labels="true" FCC_show_contour_txnames="true" FCC_contour_line_width="0.5" signal_contour_line_width="0.5" radial_line_width="0.5" effective_display_height="0.0" effective_display_height_use_mobile_height="false" grid_edge_display="1.0" grid_lines_signal_only="false" signal_level_display_threshold="-120.0" show_remote_on_legend_="true" control_mls_using_approx_range="false" control_using_sector_study_radius="false" include_interfering_remote="true" include_base_to_base_interference="false" maximum_number_interfering_sectors="6" link_reliability_name="Reliability Method 1" use_MIMO_adjustments="true" fresnel_zone_clearance="0.6" use_filter_polygon="false" filter_file_name="" use_channel_color_mls="false" use_symbol="false">
-     <route_study_symbol>
-      <Symbol shape="35" point_size="15">
-       <color>
-        <Color r="0" g="0" b="0"/>
-       </color>
-      </Symbol>
-     </route_study_symbol>
-     <FCC_contour_label_font>
-      <Font font_name="Arial" point_size="8" orientation_angle="0.0" style_flags_="0">
-       <fore_color>
-        <Color r="0" g="0" b="0"/>
-       </fore_color>
-      </Font>
-     </FCC_contour_label_font>
-     <area_studies_flat_grid_color>
-      <AnnotatedColorMap size="6">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="6">
-        <ColorMapEntry val="-60.0" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-70.0" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-80.0" r="0" g="0" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="-90.0" r="0" g="255" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="-100.0" r="128" g="255" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="-100.0" r="128" g="128" b="128" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_flat_grid_color>
-     <area_studies_contour_color>
-      <AnnotatedColorMap size="6">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="6">
-        <ColorMapEntry val="-60.0" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-70.0" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-80.0" r="0" g="0" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="-90.0" r="0" g="255" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="-100.0" r="128" g="255" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="-100.0" r="128" g="128" b="128" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_contour_color>
-     <area_studies_gradient_color>
-      <AnnotatedColorMap size="6">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="6">
-        <ColorMapEntry val="-60.0" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-70.0" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="-80.0" r="0" g="0" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="-90.0" r="0" g="255" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="-100.0" r="128" g="255" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="-100.0" r="128" g="128" b="128" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_gradient_color>
-    </AreaStudy>
-    <AreaStudy group_identifier="Master group" second_group_identifier="Master group" group_id2="0" area_study_type="17" plot_type="flat grid" calc_method="multipoint study" noise_interference_type="noise and interference" calculate_study="true" use_uplink_independent_calc="false" notes="" receive_unit_id="0" study_display_type="composite grid" FCC_show_contour_labels="true" FCC_show_contour_txnames="true" FCC_contour_line_width="0.5" signal_contour_line_width="0.5" radial_line_width="0.5" effective_display_height="0.0" effective_display_height_use_mobile_height="false" grid_edge_display="1.0" grid_lines_signal_only="false" signal_level_display_threshold="-120.0" show_remote_on_legend_="true" control_mls_using_approx_range="false" control_using_sector_study_radius="false" include_interfering_remote="true" include_base_to_base_interference="false" maximum_number_interfering_sectors="6" link_reliability_name="Reliability Method 1" use_MIMO_adjustments="true" fresnel_zone_clearance="0.6" use_filter_polygon="false" filter_file_name="" use_channel_color_mls="false" use_symbol="false">
-     <route_study_symbol>
-      <Symbol shape="35" point_size="15">
-       <color>
-        <Color r="0" g="0" b="0"/>
-       </color>
-      </Symbol>
-     </route_study_symbol>
-     <FCC_contour_label_font>
-      <Font font_name="Arial" point_size="8" orientation_angle="0.0" style_flags_="0">
-       <fore_color>
-        <Color r="0" g="0" b="0"/>
-       </fore_color>
-      </Font>
-     </FCC_contour_label_font>
-     <area_studies_flat_grid_color>
-      <AnnotatedColorMap size="8">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="8">
-        <ColorMapEntry val="99.99" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="99.90000000000001" r="0" g="128" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="99.0" r="0" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="95.0" r="128" g="255" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="90.0" r="0" g="128" b="192" symbol="SOLID"/>
-        <ColorMapEntry val="70.0" r="128" g="128" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="50.0" r="0" g="255" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="50.0" r="128" g="128" b="128" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_flat_grid_color>
-     <area_studies_contour_color>
-      <AnnotatedColorMap size="8">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="8">
-        <ColorMapEntry val="99.99" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="99.90000000000001" r="0" g="128" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="99.0" r="0" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="95.0" r="128" g="255" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="90.0" r="0" g="128" b="192" symbol="SOLID"/>
-        <ColorMapEntry val="70.0" r="128" g="128" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="50.0" r="0" g="255" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="50.0" r="128" g="128" b="128" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_contour_color>
-     <area_studies_gradient_color>
-      <AnnotatedColorMap size="8">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="8">
-        <ColorMapEntry val="99.99" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="99.90000000000001" r="0" g="128" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="99.0" r="0" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="95.0" r="128" g="255" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="90.0" r="0" g="128" b="192" symbol="SOLID"/>
-        <ColorMapEntry val="70.0" r="128" g="128" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="50.0" r="0" g="255" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="50.0" r="128" g="128" b="128" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_gradient_color>
-    </AreaStudy>
-    <AreaStudy group_identifier="Master group" second_group_identifier="Master group" group_id2="0" area_study_type="311" plot_type="flat grid" calc_method="multipoint study" noise_interference_type="noise and interference" calculate_study="true" use_uplink_independent_calc="false" notes="" receive_unit_id="0" study_display_type="composite grid" FCC_show_contour_labels="true" FCC_show_contour_txnames="true" FCC_contour_line_width="0.5" signal_contour_line_width="0.5" radial_line_width="0.5" effective_display_height="0.0" effective_display_height_use_mobile_height="false" grid_edge_display="1.0" grid_lines_signal_only="false" signal_level_display_threshold="-120.0" show_remote_on_legend_="true" control_mls_using_approx_range="false" control_using_sector_study_radius="false" include_interfering_remote="true" include_base_to_base_interference="false" maximum_number_interfering_sectors="6" link_reliability_name="Reliability Method 1" use_MIMO_adjustments="true" fresnel_zone_clearance="0.6" use_filter_polygon="false" filter_file_name="" use_channel_color_mls="false" use_symbol="false">
-     <route_study_symbol>
-      <Symbol shape="35" point_size="15">
-       <color>
-        <Color r="0" g="0" b="0"/>
-       </color>
-      </Symbol>
-     </route_study_symbol>
-     <FCC_contour_label_font>
-      <Font font_name="Arial" point_size="8" orientation_angle="0.0" style_flags_="0">
-       <fore_color>
-        <Color r="0" g="0" b="0"/>
-       </fore_color>
-      </Font>
-     </FCC_contour_label_font>
-     <area_studies_flat_grid_color>
-      <AnnotatedColorMap size="5">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="5">
-        <ColorMapEntry val="25.0" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="15.0" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="10.0" r="40" g="100" b="241" symbol="SOLID"/>
-        <ColorMapEntry val="5.0" r="0" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="5.0" r="0" g="255" b="255" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_flat_grid_color>
-     <area_studies_contour_color>
-      <AnnotatedColorMap size="5">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="5">
-        <ColorMapEntry val="25.0" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="15.0" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="10.0" r="40" g="100" b="241" symbol="SOLID"/>
-        <ColorMapEntry val="5.0" r="0" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="5.0" r="0" g="255" b="255" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_contour_color>
-     <area_studies_gradient_color>
-      <AnnotatedColorMap size="5">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="5">
-        <ColorMapEntry val="25.0" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="15.0" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="10.0" r="40" g="100" b="241" symbol="SOLID"/>
-        <ColorMapEntry val="5.0" r="0" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="5.0" r="0" g="255" b="255" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_gradient_color>
-    </AreaStudy>
-    <AreaStudy group_identifier="Master group" second_group_identifier="Master group" group_id2="0" area_study_type="7" plot_type="flat grid" calc_method="multipoint study" noise_interference_type="noise and interference" calculate_study="true" use_uplink_independent_calc="false" notes="" receive_unit_id="0" study_display_type="composite grid" FCC_show_contour_labels="true" FCC_show_contour_txnames="true" FCC_contour_line_width="0.5" signal_contour_line_width="0.5" radial_line_width="0.5" effective_display_height="0.0" effective_display_height_use_mobile_height="false" grid_edge_display="1.0" grid_lines_signal_only="false" signal_level_display_threshold="-120.0" show_remote_on_legend_="true" control_mls_using_approx_range="false" control_using_sector_study_radius="false" include_interfering_remote="true" include_base_to_base_interference="false" maximum_number_interfering_sectors="6" link_reliability_name="Reliability Method 1" use_MIMO_adjustments="true" fresnel_zone_clearance="0.6" use_filter_polygon="false" filter_file_name="" use_channel_color_mls="false" use_symbol="false">
-     <route_study_symbol>
-      <Symbol shape="35" point_size="15">
-       <color>
-        <Color r="0" g="0" b="0"/>
-       </color>
-      </Symbol>
-     </route_study_symbol>
-     <FCC_contour_label_font>
-      <Font font_name="Arial" point_size="8" orientation_angle="0.0" style_flags_="0">
-       <fore_color>
-        <Color r="0" g="0" b="0"/>
-       </fore_color>
-      </Font>
-     </FCC_contour_label_font>
-     <area_studies_flat_grid_color>
-      <AnnotatedColorMap size="5">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="5">
-        <ColorMapEntry val="25.0" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="15.0" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="10.0" r="0" g="0" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="5.0" r="0" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="5.0" r="0" g="255" b="255" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_flat_grid_color>
-     <area_studies_contour_color>
-      <AnnotatedColorMap size="5">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="5">
-        <ColorMapEntry val="25.0" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="15.0" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="10.0" r="0" g="0" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="5.0" r="0" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="5.0" r="0" g="255" b="255" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_contour_color>
-     <area_studies_gradient_color>
-      <AnnotatedColorMap size="5">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="5">
-        <ColorMapEntry val="25.0" r="255" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="15.0" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="10.0" r="0" g="0" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="5.0" r="0" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="5.0" r="0" g="255" b="255" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_gradient_color>
-    </AreaStudy>
-    <AreaStudy group_identifier="Master group" second_group_identifier="Master group" group_id2="0" area_study_type="312" plot_type="flat grid" calc_method="multipoint study" noise_interference_type="noise and interference" calculate_study="true" use_uplink_independent_calc="false" notes="" receive_unit_id="0" study_display_type="composite grid" FCC_show_contour_labels="true" FCC_show_contour_txnames="true" FCC_contour_line_width="0.5" signal_contour_line_width="0.5" radial_line_width="0.5" effective_display_height="0.0" effective_display_height_use_mobile_height="false" grid_edge_display="1.0" grid_lines_signal_only="false" signal_level_display_threshold="-120.0" show_remote_on_legend_="true" control_mls_using_approx_range="false" control_using_sector_study_radius="false" include_interfering_remote="true" include_base_to_base_interference="false" maximum_number_interfering_sectors="6" link_reliability_name="Reliability Method 1" use_MIMO_adjustments="true" fresnel_zone_clearance="0.6" use_filter_polygon="false" filter_file_name="" use_channel_color_mls="false" use_symbol="false">
-     <route_study_symbol>
-      <Symbol shape="35" point_size="15">
-       <color>
-        <Color r="0" g="0" b="0"/>
-       </color>
-      </Symbol>
-     </route_study_symbol>
-     <FCC_contour_label_font>
-      <Font font_name="Arial" point_size="8" orientation_angle="0.0" style_flags_="0">
-       <fore_color>
-        <Color r="0" g="0" b="0"/>
-       </fore_color>
-      </Font>
-     </FCC_contour_label_font>
-     <area_studies_flat_grid_color>
-      <AnnotatedColorMap size="8">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="8">
-        <ColorMapEntry val="99.99" r="255" g="255" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="99.90000000000001" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="99.0" r="0" g="128" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="95.0" r="0" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="90.0" r="0" g="0" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="70.0" r="0" g="255" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="50.0" r="128" g="128" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="50.0" r="192" g="192" b="192" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_flat_grid_color>
-     <area_studies_contour_color>
-      <AnnotatedColorMap size="8">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="8">
-        <ColorMapEntry val="99.99" r="255" g="255" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="99.90000000000001" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="99.0" r="0" g="128" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="95.0" r="0" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="90.0" r="0" g="0" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="70.0" r="0" g="255" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="50.0" r="128" g="128" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="50.0" r="192" g="192" b="192" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_contour_color>
-     <area_studies_gradient_color>
-      <AnnotatedColorMap size="8">
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <Annotation desc=""/>
-       <ColorMap size="8">
-        <ColorMapEntry val="99.99" r="255" g="255" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="99.90000000000001" r="255" g="0" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="99.0" r="0" g="128" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="95.0" r="0" g="255" b="0" symbol="SOLID"/>
-        <ColorMapEntry val="90.0" r="0" g="0" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="70.0" r="0" g="255" b="255" symbol="SOLID"/>
-        <ColorMapEntry val="50.0" r="128" g="128" b="128" symbol="SOLID"/>
-        <ColorMapEntry val="50.0" r="192" g="192" b="192" symbol="SOLID"/>
-       </ColorMap>
-      </AnnotatedColorMap>
-     </area_studies_gradient_color>
-    </AreaStudy>
-   </MultipointStudies>
-   <MapLayers no_of_layers="1">
+   <MultipointStudies last_selected_index="1" ui_track_index="-1" use_assigned_server="true" size="0"/>
+   <MapLayers no_of_layers="5">
     <StudyGrid latitude="44.06647777777778" longitude="-123.1673166666667" width="63.416" height="49.415" point_spacing="0.15" auto_grid="false" show_grid_boundary_on_map="true">
      <study_grid_boundary_pen>
       <PenDesc width="0.0" style="solid">
@@ -739,9 +113,9 @@
       </PenDesc>
      </study_grid_boundary_pen>
     </StudyGrid>
-    <TerrainGrid plot_type="shaded relief" contour_line_width="0.3" edge_relief="1.0" use_lighting_effects="false" use_terrain_and_clutter="false">
+    <TerrainGrid plot_type="3D" contour_line_width="0.3" edge_relief="1.0" use_lighting_effects="false" use_terrain_and_clutter="false">
      <terrain_flat_grid_colors>
-      <ColorMapIndex index="5"/>
+      <ColorMapIndex index="2"/>
      </terrain_flat_grid_colors>
      <terrain_contour_colors>
       <ColorMapIndex index="7"/>
@@ -875,7 +249,7 @@
     </DemographicGrid>
     <TrafficGrid plot_type="flat grid" contour_line_width="0.3">
      <traffic_flat_grid_colors>
-      <ColorMapIndex index="0"/>
+      <ColorMapIndex index="8"/>
      </traffic_flat_grid_colors>
      <traffic_contour_colors>
       <ColorMapIndex index="0"/>
@@ -1000,9 +374,29 @@
       </ColorMapIndexTable>
      </link_colors>
     </LinkSiteStyle>
+    <MapLayerTypeAndLayer layer_type="transmitter/base/hub sites">
+     <MapLayer description="" show="true" show_on_legend="true" min_scale="1e-005" max_scale="2500.0" alpha="100">
+      <MaplayerInfo/>
+     </MapLayer>
+    </MapLayerTypeAndLayer>
+    <MapLayerTypeAndLayer layer_type="traffic data">
+     <MapLayer description="" show="true" show_on_legend="true" min_scale="1e-005" max_scale="2500.0" alpha="100">
+      <MaplayerInfo/>
+     </MapLayer>
+    </MapLayerTypeAndLayer>
+    <MapLayerTypeAndLayer layer_type="terrain">
+     <MapLayer description="" show="true" show_on_legend="true" min_scale="1e-005" max_scale="2500.0" alpha="100">
+      <MaplayerInfo/>
+     </MapLayer>
+    </MapLayerTypeAndLayer>
     <MapLayerTypeAndLayer layer_type="reference grid">
      <MapLayer description="" show="true" show_on_legend="false" min_scale="1e-005" max_scale="2500.0" alpha="100">
       <MaplayerInfo/>
+     </MapLayer>
+    </MapLayerTypeAndLayer>
+    <MapLayerTypeAndLayer layer_type="image">
+     <MapLayer description="&lt;INSTALL_PATH&gt;\SAMPLE DATA\MAP_IMAGES\SALEM250.TIF" show="true" show_on_legend="true" min_scale="1e-005" max_scale="2500.0" alpha="100">
+      <MaplayerInfo image_filename="&lt;INSTALL_PATH&gt;\SAMPLE DATA\MAP_IMAGES\SALEM250.TIF"/>
      </MapLayer>
     </MapLayerTypeAndLayer>
    </MapLayers>

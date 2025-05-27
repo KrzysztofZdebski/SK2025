@@ -2310,15 +2310,13 @@
  <NeighborListGeneration max_neighbors="4" include_2nd_servers="true" include_3rd_servers="true" exclude_co_channel_neighbors="true" group_identifier="master group" server_selection="PowerReceived" copy_predicted_to_actual="false" remote_unit_ID="0"/>
  <TxGroups size="1">
   <TxGroup name="Master group" guid="a07b661e-f7c1-4c14-ae37-116aeebd111e" description="All sites and sectors" receiver_locked="false" number="1">
-   <TX_ID id="Coburg" active="true"/>
+   <TX_ID id="ABAA0001" active="true"/>
   </TxGroup>
  </TxGroups>
  <LinkGroups size="1">
   <LinkGroupCreationOptions RF_group_name="Master group" link_template_name="" link_group_name="" link_group_description="" limit_distance="false" limit_distance_max="1.0"/>
   <LinkGroupCreationOptions RF_group_name="Master group" link_template_name="" link_group_name="" link_group_description="" limit_distance="false" limit_distance_max="1.0"/>
-  <LinkGroup name="Master group" description="All Links" number="1">
-   <LinkID id="Link_A-Link_B" f="true" r="true"/>
-  </LinkGroup>
+  <LinkGroup name="Master group" description="All Links" number="0"/>
  </LinkGroups>
  <MultiLinkStudy link_group="master group" use_APC_on_links="false" APC_objective_type="Percent service availability" APC_service_availability_percentage_objective="99.90000000000001" APC_fade_margin_objective="10.0" report_type="Detailed" use_CIN="false" CIN_name="" CIN_dB="0.0" use_LOS="false" LOS_name="" LOS_clearance="0.0" include_graph="true" cross_link_interference="false" endpoint_equipment="true" link_performance="false" composite_link_reliability="false" link_study_parameters="false"/>
  <CPEGroups size="1">
