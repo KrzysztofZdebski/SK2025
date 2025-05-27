@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <ColorCache Version="1.0.0">
- <ColorMap size="5">
-  <ColorMapEntry val="25.0" r="255" g="255" b="0" symbol="SOLID"/>
-  <ColorMapEntry val="15.0" r="255" g="0" b="0" symbol="SOLID"/>
-  <ColorMapEntry val="10.0" r="0" g="0" b="255" symbol="SOLID"/>
-  <ColorMapEntry val="5.0" r="0" g="255" b="0" symbol="SOLID"/>
-  <ColorMapEntry val="5.0" r="0" g="255" b="255" symbol="SOLID"/>
+ <ColorMap size="10">
+  <ColorMapEntry val="-52.1" r="255" g="0" b="128" symbol="SOLID"/>
+  <ColorMapEntry val="-58.4" r="255" g="28" b="142" symbol="SOLID"/>
+  <ColorMapEntry val="-64.8" r="255" g="56" b="156" symbol="SOLID"/>
+  <ColorMapEntry val="-71.2" r="255" g="85" b="170" symbol="SOLID"/>
+  <ColorMapEntry val="-77.5" r="255" g="113" b="184" symbol="SOLID"/>
+  <ColorMapEntry val="-83.90000000000001" r="255" g="141" b="199" symbol="SOLID"/>
+  <ColorMapEntry val="-90.3" r="255" g="170" b="213" symbol="SOLID"/>
+  <ColorMapEntry val="-96.59999999999999" r="255" g="198" b="227" symbol="SOLID"/>
+  <ColorMapEntry val="-103.0" r="255" g="226" b="241" symbol="SOLID"/>
+  <ColorMapEntry val="-103.0" r="255" g="255" b="255" symbol="NO_SYMBOL"/>
  </ColorMap>
 </ColorCache>

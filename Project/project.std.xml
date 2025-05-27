@@ -110,35 +110,55 @@
   </UE_Categories>
  </MonteCarloInfoLTE>
  <MonteCarloInfoWiMAX simulation_mode="1" multiply_remotes_num="0.0" remotes_increase_percentage="1.0" use_terminate_UGS_blocked="false" UGS_blocked_percentage="0.0" use_terminate_BE_held="false" BE_held_percentage="0.0" num_iterations="1" seed="711" group_id="Master group" max_capacity_reserved_for_UGS="0.0" output_type="0"/>
- <TrafficLoading ky_traffic_source="1" group_identifier="master group" percent_carried="10.0">
-  <CircuitSwitchedTD average_call_duration="1.76" blocking_probability="2.0" ky_erlang_type="1" uniform_distribution="100.0" demographic_distribution="100.0" forward_link_voice_activation_factor="0.45" reverse_link_voice_activation_factor="0.5" num_service_places="10">
-   <ServicePlace name="water" id="1" calls_per_hour="2.0"/>
-   <ServicePlace name="open" id="2" calls_per_hour="1.0"/>
-   <ServicePlace name="deciduous forest" id="3" calls_per_hour="1.0"/>
-   <ServicePlace name="coniferous forest" id="4" calls_per_hour="0.1"/>
-   <ServicePlace name="light density residential" id="5" calls_per_hour="2.0"/>
-   <ServicePlace name="heavy density residential" id="6" calls_per_hour="0.1"/>
-   <ServicePlace name="commercial/industrial" id="7" calls_per_hour="4.0"/>
-   <ServicePlace name="urban" id="8" calls_per_hour="8.0"/>
-   <ServicePlace name="dense urban" id="9" calls_per_hour="12.0"/>
-   <ServicePlace name="core urban" id="10" calls_per_hour="0.0"/>
+ <TrafficLoading ky_traffic_source="4" group_identifier="Master group" percent_carried="100.0">
+  <CircuitSwitchedTD average_call_duration="1.76" blocking_probability="1.0" ky_erlang_type="1" uniform_distribution="100.0" demographic_distribution="100.0" forward_link_voice_activation_factor="0.45" reverse_link_voice_activation_factor="0.5" num_service_places="20">
+   <ServicePlace name="Open Water" id="1" calls_per_hour="2.0"/>
+   <ServicePlace name="Perennial Ice/Snow" id="2" calls_per_hour="1.0"/>
+   <ServicePlace name="Developed Open Space" id="3" calls_per_hour="1.0"/>
+   <ServicePlace name="Developed Low Intensity" id="4" calls_per_hour="0.1"/>
+   <ServicePlace name="Developed Medium Intensity" id="5" calls_per_hour="2.0"/>
+   <ServicePlace name="Developed High Intensity" id="6" calls_per_hour="0.1"/>
+   <ServicePlace name="Bare Rock/Sand/Clay" id="7" calls_per_hour="4.0"/>
+   <ServicePlace name="Deciduous Forest" id="8" calls_per_hour="8.0"/>
+   <ServicePlace name="Evergreen Forest" id="9" calls_per_hour="12.0"/>
+   <ServicePlace name="Mixed Forest" id="10" calls_per_hour="0.0"/>
+   <ServicePlace name="Dwarf Scrub" id="11" calls_per_hour="100.0"/>
+   <ServicePlace name="Shrub/Scrub" id="12" calls_per_hour="100.0"/>
+   <ServicePlace name="Grassland/Herbaceous" id="13" calls_per_hour="100.0"/>
+   <ServicePlace name="Sedge/Herbaceous" id="14" calls_per_hour="100.0"/>
+   <ServicePlace name="Lichens" id="15" calls_per_hour="100.0"/>
+   <ServicePlace name="Moss" id="16" calls_per_hour="100.0"/>
+   <ServicePlace name="Pasture/Hay" id="17" calls_per_hour="100.0"/>
+   <ServicePlace name="Cultivated Crops" id="18" calls_per_hour="100.0"/>
+   <ServicePlace name="Woody Wetlands" id="19" calls_per_hour="100.0"/>
+   <ServicePlace name="Emergent Herbaceous Wetlands" id="20" calls_per_hour="100.0"/>
   </CircuitSwitchedTD>
-  <PacketSwitchedTD num_service_types="5" use_single_density="false" single_ave_uniform_dist="0.0" single_ave_dem_dist="0.0" num_service_places="10">
+  <PacketSwitchedTD num_service_types="5" use_single_density="false" single_ave_uniform_dist="0.0" single_ave_dem_dist="0.0" num_service_places="20">
    <PacketSwitchedServiceType type_name="voice" uniform_traffic_distribution="0.0" demographic_traffic_distribution="0.0"/>
    <PacketSwitchedServiceType type_name="" uniform_traffic_distribution="0.0" demographic_traffic_distribution="0.0"/>
    <PacketSwitchedServiceType type_name="" uniform_traffic_distribution="0.0" demographic_traffic_distribution="0.0"/>
    <PacketSwitchedServiceType type_name="" uniform_traffic_distribution="0.0" demographic_traffic_distribution="0.0"/>
    <PacketSwitchedServiceType type_name="" uniform_traffic_distribution="0.0" demographic_traffic_distribution="0.0"/>
-   <PacketSwitchedServicePlace place_name="open land" place_id="1" users_type_1="3.0" users_type_2="100.0" users_type_3="100.0" users_type_4="100.0" users_type_5="100.0" average_kbps_per_kmsq="0.0"/>
-   <PacketSwitchedServicePlace place_name="agricultural" place_id="2" users_type_1="1.0" users_type_2="100.0" users_type_3="100.0" users_type_4="100.0" users_type_5="100.0" average_kbps_per_kmsq="0.0"/>
-   <PacketSwitchedServicePlace place_name="rangeland" place_id="3" users_type_1="1.0" users_type_2="100.0" users_type_3="100.0" users_type_4="100.0" users_type_5="100.0" average_kbps_per_kmsq="0.0"/>
-   <PacketSwitchedServicePlace place_name="water" place_id="4" users_type_1="0.1" users_type_2="100.0" users_type_3="100.0" users_type_4="100.0" users_type_5="100.0" average_kbps_per_kmsq="0.0"/>
-   <PacketSwitchedServicePlace place_name="forest" place_id="5" users_type_1="1.0" users_type_2="100.0" users_type_3="100.0" users_type_4="100.0" users_type_5="100.0" average_kbps_per_kmsq="0.0"/>
-   <PacketSwitchedServicePlace place_name="wetland" place_id="6" users_type_1="0.1" users_type_2="100.0" users_type_3="100.0" users_type_4="100.0" users_type_5="100.0" average_kbps_per_kmsq="0.0"/>
-   <PacketSwitchedServicePlace place_name="residential" place_id="7" users_type_1="4.0" users_type_2="100.0" users_type_3="100.0" users_type_4="100.0" users_type_5="100.0" average_kbps_per_kmsq="0.0"/>
-   <PacketSwitchedServicePlace place_name="mixed urban/ buildings" place_id="8" users_type_1="6.0" users_type_2="100.0" users_type_3="100.0" users_type_4="100.0" users_type_5="100.0" average_kbps_per_kmsq="0.0"/>
-   <PacketSwitchedServicePlace place_name="commercial/industrial" place_id="9" users_type_1="15.0" users_type_2="100.0" users_type_3="100.0" users_type_4="100.0" users_type_5="100.0" average_kbps_per_kmsq="0.0"/>
-   <PacketSwitchedServicePlace place_name="snow &amp; ice" place_id="10" users_type_1="0.1" users_type_2="100.0" users_type_3="100.0" users_type_4="100.0" users_type_5="100.0" average_kbps_per_kmsq="0.0"/>
+   <PacketSwitchedServicePlace place_name="Open Water" place_id="1" users_type_1="3.0" users_type_2="100.0" users_type_3="100.0" users_type_4="100.0" users_type_5="100.0" average_kbps_per_kmsq="0.0"/>
+   <PacketSwitchedServicePlace place_name="Perennial Ice/Snow" place_id="2" users_type_1="1.0" users_type_2="100.0" users_type_3="100.0" users_type_4="100.0" users_type_5="100.0" average_kbps_per_kmsq="0.0"/>
+   <PacketSwitchedServicePlace place_name="Developed Open Space" place_id="3" users_type_1="1.0" users_type_2="100.0" users_type_3="100.0" users_type_4="100.0" users_type_5="100.0" average_kbps_per_kmsq="0.0"/>
+   <PacketSwitchedServicePlace place_name="Developed Low Intensity" place_id="4" users_type_1="0.1" users_type_2="100.0" users_type_3="100.0" users_type_4="100.0" users_type_5="100.0" average_kbps_per_kmsq="0.0"/>
+   <PacketSwitchedServicePlace place_name="Developed Medium Intensity" place_id="5" users_type_1="1.0" users_type_2="100.0" users_type_3="100.0" users_type_4="100.0" users_type_5="100.0" average_kbps_per_kmsq="0.0"/>
+   <PacketSwitchedServicePlace place_name="Developed High Intensity" place_id="6" users_type_1="0.1" users_type_2="100.0" users_type_3="100.0" users_type_4="100.0" users_type_5="100.0" average_kbps_per_kmsq="0.0"/>
+   <PacketSwitchedServicePlace place_name="Bare Rock/Sand/Clay" place_id="7" users_type_1="4.0" users_type_2="100.0" users_type_3="100.0" users_type_4="100.0" users_type_5="100.0" average_kbps_per_kmsq="0.0"/>
+   <PacketSwitchedServicePlace place_name="Deciduous Forest" place_id="8" users_type_1="6.0" users_type_2="100.0" users_type_3="100.0" users_type_4="100.0" users_type_5="100.0" average_kbps_per_kmsq="0.0"/>
+   <PacketSwitchedServicePlace place_name="Evergreen Forest" place_id="9" users_type_1="15.0" users_type_2="100.0" users_type_3="100.0" users_type_4="100.0" users_type_5="100.0" average_kbps_per_kmsq="0.0"/>
+   <PacketSwitchedServicePlace place_name="Mixed Forest" place_id="10" users_type_1="0.1" users_type_2="100.0" users_type_3="100.0" users_type_4="100.0" users_type_5="100.0" average_kbps_per_kmsq="0.0"/>
+   <PacketSwitchedServicePlace place_name="Dwarf Scrub" place_id="11" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Shrub/Scrub" place_id="12" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Grassland/Herbaceous" place_id="13" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Sedge/Herbaceous" place_id="14" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Lichens" place_id="15" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Moss" place_id="16" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Pasture/Hay" place_id="17" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Cultivated Crops" place_id="18" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Woody Wetlands" place_id="19" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Emergent Herbaceous Wetlands" place_id="20" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
   </PacketSwitchedTD>
   <PsTrafficDefinitions in_use1="true" in_use2="true" in_use3="true" in_use4="true" in_use5="true" dl_mdr_1="0.0" up_mdr_1="0.0" dl_mdr_2="0.0" up_mdr_2="0.0" dl_mdr_3="0.0" up_mdr_3="0.0" dl_mdr_4="0.0" up_mdr_4="0.0" dl_mdr_5="0.0" up_mdr_5="0.0" act_pc_1="0.0" act_pc_2="0.0" act_pc_3="0.0" act_pc_4="0.0" act_pc_5="0.0" ServiceFlow1="UGS" ServiceFlow2="UGS" ServiceFlow3="UGS" ServiceFlow4="UGS" ServiceFlow5="UGS">
    <PsTrafficDistribution dlt_1="0.0" dlt_2="0.0" dlt_3="0.0" dlt_4="0.0" dlt_5="0" dlt_6="0.0" dlt_8="0.0" upt_1="0.0" upt_2="0.0" upt_3="0.0" upt_4="0.0" upt_5="0" upt_6="0.0" upt_8="0.0" dlt_7="0.0" upt_7="0.0"/>
@@ -147,12 +167,32 @@
    <PsTrafficDistribution dlt_1="0.0" dlt_2="0.0" dlt_3="0.0" dlt_4="0.0" dlt_5="0" dlt_6="0.0" dlt_8="0.0" upt_1="0.0" upt_2="0.0" upt_3="0.0" upt_4="0.0" upt_5="0" upt_6="0.0" upt_8="0.0" dlt_7="0.0" upt_7="0.0"/>
    <PsTrafficDistribution dlt_1="0.0" dlt_2="0.0" dlt_3="0.0" dlt_4="0.0" dlt_5="0" dlt_6="0.0" dlt_8="0.0" upt_1="0.0" upt_2="0.0" upt_3="0.0" upt_4="0.0" upt_5="0" upt_6="0.0" upt_8="0.0" dlt_7="0.0" upt_7="0.0"/>
   </PsTrafficDefinitions>
-  <PacketSwitchedTDLTE num_service_types="5" use_single_density="false" single_ave_uniform_dist="0.0" single_ave_dem_dist="0.0" num_service_places="0">
+  <PacketSwitchedTDLTE num_service_types="5" use_single_density="false" single_ave_uniform_dist="0.0" single_ave_dem_dist="0.0" num_service_places="20">
    <PacketSwitchedServiceType type_name="" uniform_traffic_distribution="0.0" demographic_traffic_distribution="0.0"/>
    <PacketSwitchedServiceType type_name="" uniform_traffic_distribution="0.0" demographic_traffic_distribution="0.0"/>
    <PacketSwitchedServiceType type_name="" uniform_traffic_distribution="0.0" demographic_traffic_distribution="0.0"/>
    <PacketSwitchedServiceType type_name="" uniform_traffic_distribution="0.0" demographic_traffic_distribution="0.0"/>
    <PacketSwitchedServiceType type_name="Voice" uniform_traffic_distribution="0.003" demographic_traffic_distribution="0.003"/>
+   <PacketSwitchedServicePlace place_name="Open Water" place_id="1" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Perennial Ice/Snow" place_id="2" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Developed Open Space" place_id="3" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Developed Low Intensity" place_id="4" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Developed Medium Intensity" place_id="5" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Developed High Intensity" place_id="6" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Bare Rock/Sand/Clay" place_id="7" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Deciduous Forest" place_id="8" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Evergreen Forest" place_id="9" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Mixed Forest" place_id="10" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Dwarf Scrub" place_id="11" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Shrub/Scrub" place_id="12" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Grassland/Herbaceous" place_id="13" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Sedge/Herbaceous" place_id="14" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Lichens" place_id="15" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Moss" place_id="16" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Pasture/Hay" place_id="17" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Cultivated Crops" place_id="18" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Woody Wetlands" place_id="19" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
+   <PacketSwitchedServicePlace place_name="Emergent Herbaceous Wetlands" place_id="20" users_type_1="0.0" users_type_2="0.0" users_type_3="0.0" users_type_4="0.0" users_type_5="0.0" average_kbps_per_kmsq="10.0"/>
   </PacketSwitchedTDLTE>
   <PsTrafficDefinitionsLTE in_use1="true" in_use2="true" in_use3="true" in_use4="true" in_use5="true" dl_mdr_1="0.0" up_mdr_1="0.0" dl_mdr_2="0.0" up_mdr_2="0.0" dl_mdr_3="0.0" up_mdr_3="0.0" dl_mdr_4="0.0" up_mdr_4="0.0" dl_mdr_5="0.0" up_mdr_5="0.0" act_pc_1="0.0" act_pc_2="0.0" act_pc_3="0.0" act_pc_4="0.0" act_pc_5="0.0" ServiceFlow1="UM" ServiceFlow2="UM" ServiceFlow3="UM" ServiceFlow4="UM" ServiceFlow5="UM">
    <PsTrafficDistribution dlt_1="0.0" dlt_2="0.0" dlt_3="0.0" dlt_4="0.0" dlt_5="0" dlt_6="0.0" dlt_8="0.0" upt_1="0.0" upt_2="0.0" upt_3="0.0" upt_4="0.0" upt_5="0" upt_6="0.0" upt_8="0.0" dlt_7="0.0" upt_7="0.0"/>
@@ -363,7 +403,34 @@
  <BestLOSBuildings ignore_building_edge_shadow="true" use_building_vector_database="false" percent_building_service_objective="99.0" required_fresnel_zone_clearance="1.0" maximum_of_hub_locations_to_be_found="10" cpe_type_index="0">
   <availiable_buildings no_of_avail="0"/>
  </BestLOSBuildings>
- <GraphicObjectList number="0"/>
+ <GraphicObjectList number="1">
+  <GraphicObject graphic_type="14">
+   <ServiceAreaBoundaryObject Level_Type="2" GUID="1654081a-ea98-404a-a306-34433b858a29" ParentGUID="">
+    <PolygonObject UseFillPattern="false">
+     <PolygonObjectFill>
+      <FillDesc fill_style="solid">
+       <Color r="0" g="0" b="0"/>
+      </FillDesc>
+     </PolygonObjectFill>
+     <PolylineObject>
+      <PenDesc width="0.0" style="solid">
+       <Color r="0" g="0" b="0"/>
+      </PenDesc>
+      <GraphicalObject Id="" IndexForLabel="-1" width="0.0">
+       <Color r="0" g="255" b="0"/>
+       <LatLongTypeList number="5">
+        <LatLongPair latitude="44.86303955358539" longitude="-123.2147205539253"/>
+        <LatLongPair latitude="44.86291867576946" longitude="-122.5803557590383"/>
+        <LatLongPair latitude="44.41331624252829" longitude="-122.5836995347594"/>
+        <LatLongPair latitude="44.41395936833209" longitude="-123.2131881265296"/>
+        <LatLongPair latitude="44.86251807796559" longitude="-123.2139802462233"/>
+       </LatLongTypeList>
+      </GraphicalObject>
+     </PolylineObject>
+    </PolygonObject>
+   </ServiceAreaBoundaryObject>
+  </GraphicObject>
+ </GraphicObjectList>
  <RFLabelObjectList number="0"/>
  <CPEDisplays size="1">
   <cpe_label_font>
@@ -2003,9 +2070,82 @@
   </Transmitter_Template>
  </Transmitter_Templates>
  <FirstGenSystem>
-  <SystemTypeList last_selected_index="1" service_area_boundary_filename="">
-   <SystemType system_name="system group 1" system_type="AMPS" frequency_band="870 MHz" custom_lower_band_edge1="1000.0" custom_upper_band_edge1="1000.0" custom_lower_band_edge2="1000.0" custom_upper_band_edge2="1000.0" custom_lower_band_edge3="1000.0" custom_upper_band_edge3="1000.0" custom_lower_band_edge4="1000.0" custom_upper_band_edge4="1000.0" forward_link_lower_band_edge="869.0" forward_link_upper_band_edge="894.0" system_carrier_spacing="30.0" voice_channels_per_RF_channel="1" signal_level_minimum="1.0" track_traffic="false" track_traffic_type="0" track_traffic_cap="0.0">
-    <ChannelPlanTemplate channel_plan_template_filename="&lt;INSTALL_PATH&gt;\LIBRARY DATA\CPT\AMPS7_A.CPT" no_of_channel_group_colors="0" downlink_fade_margin_objective="10.0" uplink_fade_margin_objective="10.0" maximum_channel_overbooking_pc="10.0" assign_multiple_access_channels="false" assign_frequency_hopping_sequences="false" frequency_hopping_sequency_filename="" random_seed="0" assignment_mode="find_and_set_all_servers" channel_assignment_mode="assign_any_uplink_non_interfering_to_CT"/>
+  <SystemTypeList last_selected_index="1" service_area_boundary_filename="&lt;PROJECT_PATH&gt;\SERVAREA.BNA">
+   <SystemType system_name="GSM" system_type="GSM" frequency_band="935 MHz" custom_lower_band_edge1="1000.0" custom_upper_band_edge1="1000.0" custom_lower_band_edge2="1000.0" custom_upper_band_edge2="1000.0" custom_lower_band_edge3="1000.0" custom_upper_band_edge3="1000.0" custom_lower_band_edge4="1000.0" custom_upper_band_edge4="1000.0" forward_link_lower_band_edge="935.0" forward_link_upper_band_edge="960.0" system_carrier_spacing="200.0" voice_channels_per_RF_channel="8" signal_level_minimum="1.0" track_traffic="false" track_traffic_type="1" track_traffic_cap="0.0">
+    <ChannelPlanTemplate channel_plan_template_filename="&lt;PROJECT_PATH&gt;\GSM4.CPT" no_of_channel_group_colors="24" downlink_fade_margin_objective="10.0" uplink_fade_margin_objective="10.0" maximum_channel_overbooking_pc="10.0" assign_multiple_access_channels="false" assign_frequency_hopping_sequences="false" frequency_hopping_sequency_filename="" random_seed="0" assignment_mode="find_and_set_all_servers" channel_assignment_mode="assign_any_uplink_non_interfering_to_CT">
+     <group>
+      <Color r="146" g="42" b="69"/>
+     </group>
+     <group>
+      <Color r="89" g="79" b="54"/>
+     </group>
+     <group>
+      <Color r="144" g="162" b="175"/>
+     </group>
+     <group>
+      <Color r="75" g="8" b="4"/>
+     </group>
+     <group>
+      <Color r="72" g="239" b="210"/>
+     </group>
+     <group>
+      <Color r="125" g="86" b="74"/>
+     </group>
+     <group>
+      <Color r="90" g="168" b="255"/>
+     </group>
+     <group>
+      <Color r="132" g="216" b="54"/>
+     </group>
+     <group>
+      <Color r="143" g="50" b="184"/>
+     </group>
+     <group>
+      <Color r="244" g="240" b="246"/>
+     </group>
+     <group>
+      <Color r="68" g="220" b="64"/>
+     </group>
+     <group>
+      <Color r="15" g="184" b="245"/>
+     </group>
+     <group>
+      <Color r="157" g="212" b="60"/>
+     </group>
+     <group>
+      <Color r="151" g="40" b="7"/>
+     </group>
+     <group>
+      <Color r="197" g="208" b="86"/>
+     </group>
+     <group>
+      <Color r="217" g="121" b="116"/>
+     </group>
+     <group>
+      <Color r="118" g="142" b="131"/>
+     </group>
+     <group>
+      <Color r="164" g="167" b="180"/>
+     </group>
+     <group>
+      <Color r="250" g="80" b="5"/>
+     </group>
+     <group>
+      <Color r="184" g="206" b="130"/>
+     </group>
+     <group>
+      <Color r="93" g="237" b="83"/>
+     </group>
+     <group>
+      <Color r="234" g="46" b="180"/>
+     </group>
+     <group>
+      <Color r="94" g="143" b="49"/>
+     </group>
+     <group>
+      <Color r="236" g="157" b="12"/>
+     </group>
+    </ChannelPlanTemplate>
     <Gen1>
      <CdmaSystemParameters soft_handoff_gain="0.0" cdma_chip_rate="1.2288" base_station_noise="5.0" mobile_station_noise="8.0" total_pilot_code_offsets="1" total_channel_codes="64" mobile_station_erp="0.0" max_base_station_tce_erp="1.0" frequency_reuse_factor="0.45" percent_power_for_pilot_channel="20.0" percent_power_for_traffic_channel="75.0" percent_power_for_sync_channel="2.0" percent_power_for_paging_channel="3.0" handoff_initiate_threshold="-12.0" handoff_drop_threshold="-16.0" orthogonality_factor="1.0" imperfect_apc_factor="0.1" traffic_data_rate="1200.0" n_srch_win_a="0" group_identifier="master group" pn_c_over_i_ratio="0.5" cdma_target_eb_over_no="0.5" pn_reserved_offsets_size="0"/>
     </Gen1>
@@ -2014,7 +2154,7 @@
       <CdmaSystemParameters soft_handoff_gain="0.0" cdma_chip_rate="1.2288" base_station_noise="5.0" mobile_station_noise="8.0" total_pilot_code_offsets="1" total_channel_codes="64" mobile_station_erp="0.0" max_base_station_tce_erp="1.0" frequency_reuse_factor="0.45" percent_power_for_pilot_channel="20.0" percent_power_for_traffic_channel="75.0" percent_power_for_sync_channel="2.0" percent_power_for_paging_channel="3.0" handoff_initiate_threshold="-12.0" handoff_drop_threshold="-16.0" orthogonality_factor="1.0" imperfect_apc_factor="0.1" traffic_data_rate="1200.0" n_srch_win_a="1" group_identifier="Master group" pn_c_over_i_ratio="0.5" cdma_target_eb_over_no="0.5" pn_reserved_offsets_size="0"/>
      </PMPCdmaSystemParameters>
     </Gen3>
-    <OtherSystemParameters handoff_type="absolute level" handoff_threshold="-100.0" minimum_useable_level="-100.0" power_ratio="0.0" adj_channel_attenuation="0.0" measured_intrf_filename=""/>
+    <OtherSystemParameters handoff_type="power ratio" handoff_threshold="-100.0" minimum_useable_level="-100.0" power_ratio="6.0" adj_channel_attenuation="0.0" measured_intrf_filename=""/>
    </SystemType>
    <SystemType system_name="system group 2" system_type="amps" frequency_band="870 MHz" custom_lower_band_edge1="1000.0" custom_upper_band_edge1="1000.0" custom_lower_band_edge2="1000.0" custom_upper_band_edge2="1000.0" custom_lower_band_edge3="1000.0" custom_upper_band_edge3="1000.0" custom_lower_band_edge4="1000.0" custom_upper_band_edge4="1000.0" forward_link_lower_band_edge="869.0" forward_link_upper_band_edge="894.0" system_carrier_spacing="30.0" voice_channels_per_RF_channel="1" signal_level_minimum="1.0" track_traffic="false" track_traffic_type="0" track_traffic_cap="0.0">
     <ChannelPlanTemplate channel_plan_template_filename="" no_of_channel_group_colors="0" downlink_fade_margin_objective="10.0" uplink_fade_margin_objective="10.0" maximum_channel_overbooking_pc="10.0" assign_multiple_access_channels="false" assign_frequency_hopping_sequences="false" frequency_hopping_sequency_filename="" random_seed="0" assignment_mode="find_and_set_all_servers" channel_assignment_mode="assign_any_uplink_non_interfering_to_CT"/>
@@ -2309,8 +2449,10 @@
  </MultipointStudyLayout>
  <NeighborListGeneration max_neighbors="4" include_2nd_servers="true" include_3rd_servers="true" exclude_co_channel_neighbors="true" group_identifier="master group" server_selection="PowerReceived" copy_predicted_to_actual="false" remote_unit_ID="0"/>
  <TxGroups size="1">
-  <TxGroup name="Master group" guid="a07b661e-f7c1-4c14-ae37-116aeebd111e" description="All sites and sectors" receiver_locked="false" number="1">
+  <TxGroup name="Master group" guid="a07b661e-f7c1-4c14-ae37-116aeebd111e" description="All sites and sectors" receiver_locked="false" number="3">
    <TX_ID id="ABAA0001" active="true"/>
+   <TX_ID id="ABAA0002" active="true"/>
+   <TX_ID id="ABAA0003" active="true"/>
   </TxGroup>
  </TxGroups>
  <LinkGroups size="1">
