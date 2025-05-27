@@ -15,7 +15,7 @@
      <Tx frequency="450.0" adaptive_antenna="0" simulcast_delay_offset="0.0" override_most_likely_server_color="false" propagation_group="1" mimo_type_and_size="None" use_amod_table="false" amod_table_name="Global Table" has_repeater="false" repeater_owner="" rpt_interfere="0" rpt_gain="0.0" rpt_type="1">
       <BaseTx tx_id="ABAA0001" UserSectorID="" guid="9f8e0a73-e37a-4ab7-a4a2-6624a17035da" system="0" focus="false" most_likely_server_symbol="SOLID">
        <most_likely_server_color>
-        <Color r="255" g="0" b="0"/>
+        <Color r="12" g="21" b="57"/>
        </most_likely_server_color>
        <StudySector start_azimuth="0.0" stop_azimuth="360.0" azimuth_increment="1.0" odd_azimuth="-1.0" study_radius="75.0" study_point_spacing="0.1" approximate_range="50.0"/>
       </BaseTx>
