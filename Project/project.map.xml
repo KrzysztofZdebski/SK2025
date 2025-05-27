@@ -75,7 +75,7 @@
      </PenDesc>
     </BorderPenDesc>
    </MapPref>
-   <AreaStudies last_selected_index="1" ui_track_index="0" size="1">
+   <AreaStudies last_selected_index="2" ui_track_index="0" size="2">
     <AreaStudy group_identifier="Master group" second_group_identifier="Master group" group_id2="0" area_study_type="10" plot_type="flat grid" calc_method="radial line" noise_interference_type="noise and interference" calculate_study="true" use_uplink_independent_calc="false" notes="" receive_unit_id="0" study_display_type="composite grid" FCC_show_contour_labels="true" FCC_show_contour_txnames="true" FCC_contour_line_width="0.5" signal_contour_line_width="0.5" radial_line_width="0.5" effective_display_height="0.0" effective_display_height_use_mobile_height="false" grid_edge_display="1.0" grid_lines_signal_only="false" signal_level_display_threshold="-120.0" show_remote_on_legend_="true" control_mls_using_approx_range="false" control_using_sector_study_radius="false" include_interfering_remote="true" include_base_to_base_interference="false" maximum_number_interfering_sectors="6" link_reliability_name="Reliability Method 1" use_MIMO_adjustments="true" fresnel_zone_clearance="0.6" use_filter_polygon="false" filter_file_name="" use_channel_color_mls="false">
      <FCC_contour_label_font>
       <Font font_name="Arial" point_size="8" orientation_angle="0.0" style_flags_="0">
@@ -100,12 +100,69 @@
       </AnnotatedColorMap>
      </area_studies_gradient_color>
     </AreaStudy>
+    <AreaStudy group_identifier="Master group" second_group_identifier="Master group" group_id2="0" area_study_type="7" plot_type="flat grid" calc_method="radial line" noise_interference_type="noise and interference" calculate_study="true" use_uplink_independent_calc="false" notes="" receive_unit_id="0" study_display_type="composite grid" FCC_show_contour_labels="true" FCC_show_contour_txnames="true" FCC_contour_line_width="0.5" signal_contour_line_width="0.5" radial_line_width="0.5" effective_display_height="0.0" effective_display_height_use_mobile_height="false" grid_edge_display="1.0" grid_lines_signal_only="false" signal_level_display_threshold="-120.0" show_remote_on_legend_="true" control_mls_using_approx_range="false" control_using_sector_study_radius="false" include_interfering_remote="true" include_base_to_base_interference="false" maximum_number_interfering_sectors="6" link_reliability_name="Reliability Method 1" use_MIMO_adjustments="true" fresnel_zone_clearance="0.6" use_filter_polygon="false" filter_file_name="" use_channel_color_mls="false">
+     <FCC_contour_label_font>
+      <Font font_name="Arial" point_size="8" orientation_angle="0.0" style_flags_="0">
+       <fore_color>
+        <Color r="0" g="0" b="0"/>
+       </fore_color>
+      </Font>
+     </FCC_contour_label_font>
+     <area_studies_flat_grid_color>
+      <AnnotatedColorMap size="5">
+       <Annotation desc=""/>
+       <Annotation desc=""/>
+       <Annotation desc=""/>
+       <Annotation desc=""/>
+       <Annotation desc=""/>
+       <ColorMap size="5">
+        <ColorMapEntry val="25.0" r="255" g="255" b="0" symbol="SOLID"/>
+        <ColorMapEntry val="15.0" r="255" g="0" b="0" symbol="SOLID"/>
+        <ColorMapEntry val="10.0" r="0" g="0" b="255" symbol="SOLID"/>
+        <ColorMapEntry val="5.0" r="0" g="255" b="0" symbol="SOLID"/>
+        <ColorMapEntry val="5.0" r="0" g="255" b="255" symbol="SOLID"/>
+       </ColorMap>
+      </AnnotatedColorMap>
+     </area_studies_flat_grid_color>
+     <area_studies_contour_color>
+      <AnnotatedColorMap size="5">
+       <Annotation desc=""/>
+       <Annotation desc=""/>
+       <Annotation desc=""/>
+       <Annotation desc=""/>
+       <Annotation desc=""/>
+       <ColorMap size="5">
+        <ColorMapEntry val="25.0" r="255" g="255" b="0" symbol="SOLID"/>
+        <ColorMapEntry val="15.0" r="255" g="0" b="0" symbol="SOLID"/>
+        <ColorMapEntry val="10.0" r="0" g="0" b="255" symbol="SOLID"/>
+        <ColorMapEntry val="5.0" r="0" g="255" b="0" symbol="SOLID"/>
+        <ColorMapEntry val="5.0" r="0" g="255" b="255" symbol="SOLID"/>
+       </ColorMap>
+      </AnnotatedColorMap>
+     </area_studies_contour_color>
+     <area_studies_gradient_color>
+      <AnnotatedColorMap size="5">
+       <Annotation desc=""/>
+       <Annotation desc=""/>
+       <Annotation desc=""/>
+       <Annotation desc=""/>
+       <Annotation desc=""/>
+       <ColorMap size="5">
+        <ColorMapEntry val="25.0" r="255" g="255" b="0" symbol="SOLID"/>
+        <ColorMapEntry val="15.0" r="255" g="0" b="0" symbol="SOLID"/>
+        <ColorMapEntry val="10.0" r="0" g="0" b="255" symbol="SOLID"/>
+        <ColorMapEntry val="5.0" r="0" g="255" b="0" symbol="SOLID"/>
+        <ColorMapEntry val="5.0" r="0" g="255" b="255" symbol="SOLID"/>
+       </ColorMap>
+      </AnnotatedColorMap>
+     </area_studies_gradient_color>
+    </AreaStudy>
    </AreaStudies>
    <RouteStudies last_selected_index="1" ui_track_index="-1" size="0">
     <RouteStudyParms study_route_filename="&lt;INSTALL_PATH&gt;\SAMPLE DATA\BIG_EUGENE_DRIVE_TEST.BNA" route_point_spacing="0.1" interpolate_points_along_route="true" use_remote="true" use_study_limit="false"/>
    </RouteStudies>
    <MultipointStudies last_selected_index="1" ui_track_index="-1" use_assigned_server="true" size="0"/>
-   <MapLayers no_of_layers="6">
+   <MapLayers no_of_layers="7">
     <StudyGrid latitude="44.06647777777778" longitude="-123.1673166666667" width="63.416" height="49.415" point_spacing="0.15" auto_grid="false" show_grid_boundary_on_map="true">
      <study_grid_boundary_pen>
       <PenDesc width="0.0" style="solid">
@@ -374,6 +431,11 @@
       </ColorMapIndexTable>
      </link_colors>
     </LinkSiteStyle>
+    <MapLayerTypeAndLayer layer_type="signal levels: 1">
+     <MapLayer description="C/(I+N) at remote for strongest desired base station" show="true" show_on_legend="true" min_scale="1e-005" max_scale="2500.0" alpha="100">
+      <MaplayerInfo area_study_index="1"/>
+     </MapLayer>
+    </MapLayerTypeAndLayer>
     <MapLayerTypeAndLayer layer_type="signal levels: 0">
      <MapLayer description="Strongest (most likely) Server" show="true" show_on_legend="true" min_scale="1e-005" max_scale="2500.0" alpha="100">
       <MaplayerInfo area_study_index="0"/>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<StudyGridParameters version="1.0.0">
+   <AreaStudy type="C/(I+N) at remote for strongest desired base station" dBm_threshold="-120.0"/>
+   <RemoteUnit height="    2.0" height_reference="AGL" units="meters"/>
+   <GeoCenter latitude="  44.0664778" longitude="-123.1673167"/>
+   <Dimension width="  63.300" height="  49.500" grid_spacing="   0.150" units="km"/>
+</StudyGridParameters>               
