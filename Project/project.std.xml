@@ -2072,78 +2072,30 @@
  <FirstGenSystem>
   <SystemTypeList last_selected_index="1" service_area_boundary_filename="&lt;PROJECT_PATH&gt;\SERVAREA.BNA">
    <SystemType system_name="GSM" system_type="GSM" frequency_band="935 MHz" custom_lower_band_edge1="1000.0" custom_upper_band_edge1="1000.0" custom_lower_band_edge2="1000.0" custom_upper_band_edge2="1000.0" custom_lower_band_edge3="1000.0" custom_upper_band_edge3="1000.0" custom_lower_band_edge4="1000.0" custom_upper_band_edge4="1000.0" forward_link_lower_band_edge="935.0" forward_link_upper_band_edge="960.0" system_carrier_spacing="200.0" voice_channels_per_RF_channel="8" signal_level_minimum="1.0" track_traffic="false" track_traffic_type="1" track_traffic_cap="0.0">
-    <ChannelPlanTemplate channel_plan_template_filename="&lt;PROJECT_PATH&gt;\GSM4.CPT" no_of_channel_group_colors="24" downlink_fade_margin_objective="10.0" uplink_fade_margin_objective="10.0" maximum_channel_overbooking_pc="10.0" assign_multiple_access_channels="false" assign_frequency_hopping_sequences="false" frequency_hopping_sequency_filename="" random_seed="0" assignment_mode="find_and_set_all_servers" channel_assignment_mode="assign_any_uplink_non_interfering_to_CT">
+    <ChannelPlanTemplate channel_plan_template_filename="&lt;PROJECT_PATH&gt;\GSM4.CPT" no_of_channel_group_colors="8" downlink_fade_margin_objective="10.0" uplink_fade_margin_objective="10.0" maximum_channel_overbooking_pc="10.0" assign_multiple_access_channels="false" assign_frequency_hopping_sequences="false" frequency_hopping_sequency_filename="" random_seed="0" assignment_mode="find_and_set_all_servers" channel_assignment_mode="assign_any_uplink_non_interfering_to_CT">
      <group>
-      <Color r="146" g="42" b="69"/>
+      <Color r="196" g="208" b="37"/>
      </group>
      <group>
-      <Color r="89" g="79" b="54"/>
+      <Color r="184" g="224" b="112"/>
      </group>
      <group>
-      <Color r="144" g="162" b="175"/>
+      <Color r="21" g="118" b="18"/>
      </group>
      <group>
-      <Color r="75" g="8" b="4"/>
+      <Color r="117" g="213" b="8"/>
      </group>
      <group>
-      <Color r="72" g="239" b="210"/>
+      <Color r="29" g="105" b="181"/>
      </group>
      <group>
-      <Color r="125" g="86" b="74"/>
+      <Color r="60" g="225" b="84"/>
      </group>
      <group>
-      <Color r="90" g="168" b="255"/>
+      <Color r="44" g="134" b="254"/>
      </group>
      <group>
-      <Color r="132" g="216" b="54"/>
-     </group>
-     <group>
-      <Color r="143" g="50" b="184"/>
-     </group>
-     <group>
-      <Color r="244" g="240" b="246"/>
-     </group>
-     <group>
-      <Color r="68" g="220" b="64"/>
-     </group>
-     <group>
-      <Color r="15" g="184" b="245"/>
-     </group>
-     <group>
-      <Color r="157" g="212" b="60"/>
-     </group>
-     <group>
-      <Color r="151" g="40" b="7"/>
-     </group>
-     <group>
-      <Color r="197" g="208" b="86"/>
-     </group>
-     <group>
-      <Color r="217" g="121" b="116"/>
-     </group>
-     <group>
-      <Color r="118" g="142" b="131"/>
-     </group>
-     <group>
-      <Color r="164" g="167" b="180"/>
-     </group>
-     <group>
-      <Color r="250" g="80" b="5"/>
-     </group>
-     <group>
-      <Color r="184" g="206" b="130"/>
-     </group>
-     <group>
-      <Color r="93" g="237" b="83"/>
-     </group>
-     <group>
-      <Color r="234" g="46" b="180"/>
-     </group>
-     <group>
-      <Color r="94" g="143" b="49"/>
-     </group>
-     <group>
-      <Color r="236" g="157" b="12"/>
+      <Color r="235" g="229" b="243"/>
      </group>
     </ChannelPlanTemplate>
     <Gen1>
@@ -2449,10 +2401,60 @@
  </MultipointStudyLayout>
  <NeighborListGeneration max_neighbors="4" include_2nd_servers="true" include_3rd_servers="true" exclude_co_channel_neighbors="true" group_identifier="master group" server_selection="PowerReceived" copy_predicted_to_actual="false" remote_unit_ID="0"/>
  <TxGroups size="1">
-  <TxGroup name="Master group" guid="a07b661e-f7c1-4c14-ae37-116aeebd111e" description="All sites and sectors" receiver_locked="false" number="3">
+  <TxGroup name="Master group" guid="a07b661e-f7c1-4c14-ae37-116aeebd111e" description="All sites and sectors" receiver_locked="false" number="53">
    <TX_ID id="ABAA0001" active="true"/>
-   <TX_ID id="ABAA0002" active="true"/>
-   <TX_ID id="ABAA0003" active="true"/>
+   <TX_ID id="ABAB0002" active="true"/>
+   <TX_ID id="ABAC0002" active="true"/>
+   <TX_ID id="ABAD0003" active="true"/>
+   <TX_ID id="ABAD0004" active="true"/>
+   <TX_ID id="ABAE0001" active="true"/>
+   <TX_ID id="ABAE0002" active="true"/>
+   <TX_ID id="ABAF0001" active="true"/>
+   <TX_ID id="ABAF0003" active="true"/>
+   <TX_ID id="ABAG0001" active="true"/>
+   <TX_ID id="ABAG0002" active="true"/>
+   <TX_ID id="ABAH0001" active="true"/>
+   <TX_ID id="ABAH0003" active="true"/>
+   <TX_ID id="ABAI0001" active="true"/>
+   <TX_ID id="ABAI0002" active="true"/>
+   <TX_ID id="ABAJ0002" active="true"/>
+   <TX_ID id="ABAJ0003" active="true"/>
+   <TX_ID id="ABAK0001" active="true"/>
+   <TX_ID id="ABAK0003" active="true"/>
+   <TX_ID id="ABAL0001" active="true"/>
+   <TX_ID id="ABAM0001" active="true"/>
+   <TX_ID id="ABAM0002" active="true"/>
+   <TX_ID id="ABAN0001" active="true"/>
+   <TX_ID id="ABAN0002" active="true"/>
+   <TX_ID id="ABAO0001" active="true"/>
+   <TX_ID id="ABAO0002" active="true"/>
+   <TX_ID id="ABAO0003" active="true"/>
+   <TX_ID id="ABAP0001" active="true"/>
+   <TX_ID id="ABAQ0001" active="true"/>
+   <TX_ID id="ABAR0001" active="true"/>
+   <TX_ID id="ABAS0001" active="true"/>
+   <TX_ID id="ABAT0001" active="true"/>
+   <TX_ID id="ABAU0001" active="true"/>
+   <TX_ID id="ABAV0001" active="true"/>
+   <TX_ID id="ABAW0001" active="true"/>
+   <TX_ID id="ABAX0001" active="true"/>
+   <TX_ID id="ABAY0001" active="true"/>
+   <TX_ID id="ABAY0002" active="true"/>
+   <TX_ID id="ABAZ0001" active="true"/>
+   <TX_ID id="ABBA0001" active="true"/>
+   <TX_ID id="ABBA0002" active="true"/>
+   <TX_ID id="ABBB0002" active="true"/>
+   <TX_ID id="ABBC0001" active="true"/>
+   <TX_ID id="ABBC0002" active="true"/>
+   <TX_ID id="ABBD0001" active="true"/>
+   <TX_ID id="ABBE0001" active="true"/>
+   <TX_ID id="ABBE0002" active="true"/>
+   <TX_ID id="ABBF0002" active="true"/>
+   <TX_ID id="ABBF0003" active="true"/>
+   <TX_ID id="ABBG0001" active="true"/>
+   <TX_ID id="ABBH0001" active="true"/>
+   <TX_ID id="ABBI0001" active="true"/>
+   <TX_ID id="ABBJ0001" active="true"/>
   </TxGroup>
  </TxGroups>
  <LinkGroups size="1">
