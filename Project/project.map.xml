@@ -2,8 +2,8 @@
 <ViewFile Version="8.4.0">
  <Print paper_size="1" default_source="7" orientation="2" left_margin="500" right_margin="500" top_margin="750" bottom_margin="500" driver="winspool" device="hp deskjet 970c series" output="lpt1:"/>
  <Views size="1" last_active="0">
-  <View name="initial view" top="-23" left="-4" width="1028" height="940" show="true" maximized="true">
-   <ProjectedCoordinateSystem map_center_latitude="44.63027551032102" map_center_longitude="-122.8483925917763" data_entry_display_type="lat/long: deg/min/sec" projected_coordinate_system="Latitude/Longitude" projection="Transverse Mercator" datum="WGS 84"/>
+  <View name="initial view" top="-23" left="-4" width="2259" height="949" show="true" maximized="true">
+   <ProjectedCoordinateSystem map_center_latitude="44.64036353795831" map_center_longitude="-122.6313270999812" data_entry_display_type="lat/long: deg/min/sec" projected_coordinate_system="Latitude/Longitude" projection="Transverse Mercator" datum="WGS 84"/>
    <MapTitle title="EDX Wireless" subtitle="Smart Planning for Smart Networks" date="" exhibit="" use_cur_date="false"/>
    <RefGrid reference="grid lines" spacing="30&apos;" show_annotations="true">
     <PenDesc>
@@ -252,10 +252,10 @@
     </AreaStudy>
    </AreaStudies>
    <RouteStudies last_selected_index="1" ui_track_index="-1" size="0">
-    <RouteStudyParms study_route_filename="&lt;INSTALL_PATH&gt;\SAMPLE DATA\BIG_EUGENE_DRIVE_TEST.BNA" route_point_spacing="0.1" interpolate_points_along_route="true" use_remote="true" use_study_limit="false"/>
+    <RouteStudyParms study_route_filename="C:\PROGRAM FILES\EDX\SIGNALPRO\SAMPLE DATA\BIG_EUGENE_DRIVE_TEST.BNA" route_point_spacing="0.1" interpolate_points_along_route="true" use_remote="true" use_study_limit="false"/>
    </RouteStudies>
    <MultipointStudies last_selected_index="1" ui_track_index="-1" use_assigned_server="true" size="0"/>
-   <MapLayers no_of_layers="10">
+   <MapLayers no_of_layers="11">
     <StudyGrid latitude="44.63864166666667" longitude="-122.8969666666667" width="50.0" height="50.0" point_spacing="0.1" auto_grid="false" show_grid_boundary_on_map="true">
      <study_grid_boundary_pen>
       <PenDesc width="0.0" style="solid">
@@ -265,7 +265,7 @@
     </StudyGrid>
     <TerrainGrid plot_type="3D" contour_line_width="0.3" edge_relief="1.0" use_lighting_effects="false" use_terrain_and_clutter="false">
      <terrain_flat_grid_colors>
-      <ColorMapIndex index="10"/>
+      <ColorMapIndex index="12"/>
      </terrain_flat_grid_colors>
      <terrain_contour_colors>
       <ColorMapIndex index="7"/>
@@ -399,7 +399,7 @@
     </DemographicGrid>
     <TrafficGrid plot_type="flat grid" contour_line_width="0.3">
      <traffic_flat_grid_colors>
-      <ColorMapIndex index="4"/>
+      <ColorMapIndex index="9"/>
      </traffic_flat_grid_colors>
      <traffic_contour_colors>
       <ColorMapIndex index="0"/>
@@ -424,7 +424,7 @@
      </height_color>
      <WallColors size="0"/>
     </BuildingFloorplanData>
-    <TxSiteStyle status_type="show all" marker_type="sectorized" label_type="use site name" traffic_type="Average predicted data" icon_fill_type="Fill per color" show_traffic="false" show_channels="false" show_sector_range="false" show_size_based_on_height="false" show_only_active_in_group="false" height_meter_to_mm="0.2" system="0" tx_group="Master group">
+    <TxSiteStyle status_type="show all" marker_type="sectorized" label_type="use site name" traffic_type="Average predicted data" icon_fill_type="Fill per color" show_traffic="false" show_channels="true" show_sector_range="false" show_size_based_on_height="false" show_only_active_in_group="false" height_meter_to_mm="0.2" system="0" tx_group="Master group">
      <channel_color>
       <ColorMapIndex index="0"/>
      </channel_color>
@@ -525,8 +525,8 @@
      </link_colors>
     </LinkSiteStyle>
     <MapLayerTypeAndLayer layer_type="terrain maxima locations">
-     <MapLayer description="" show="false" show_on_legend="true" min_scale="1e-005" max_scale="2500.0" alpha="100">
-      <MaplayerInfo number_of_max="1000" minimum_separation="1.0" calculate_min="false" use_filter="false" polygon_filter=""/>
+     <MapLayer description="" show="true" show_on_legend="true" min_scale="1e-005" max_scale="2500.0" alpha="100">
+      <MaplayerInfo number_of_max="20" minimum_separation="2.0" calculate_min="false" use_filter="false" polygon_filter=""/>
      </MapLayer>
     </MapLayerTypeAndLayer>
     <MapLayerTypeAndLayer layer_type="EDX graphic objects">
@@ -565,11 +565,16 @@
      </MapLayer>
     </MapLayerTypeAndLayer>
     <MapLayerTypeAndLayer layer_type="image">
-     <MapLayer description="&lt;INSTALL_PATH&gt;\SAMPLE DATA\MAP_IMAGES\SALEM250.TIF" show="true" show_on_legend="true" min_scale="1e-005" max_scale="2500.0" alpha="100">
-      <MaplayerInfo image_filename="&lt;INSTALL_PATH&gt;\SAMPLE DATA\MAP_IMAGES\SALEM250.TIF"/>
+     <MapLayer description="C:\PROGRAM FILES\EDX\SIGNALPRO\SAMPLE DATA\MAP_IMAGES\SALEM250.TIF" show="true" show_on_legend="true" min_scale="1e-005" max_scale="2500.0" alpha="100">
+      <MaplayerInfo image_filename="C:\PROGRAM FILES\EDX\SIGNALPRO\SAMPLE DATA\MAP_IMAGES\SALEM250.TIF"/>
      </MapLayer>
     </MapLayerTypeAndLayer>
     <MapLayerTypeAndLayer layer_type="reference grid">
+     <MapLayer description="" show="false" show_on_legend="false" min_scale="1e-005" max_scale="2500.0" alpha="100">
+      <MaplayerInfo/>
+     </MapLayer>
+    </MapLayerTypeAndLayer>
+    <MapLayerTypeAndLayer layer_type="demographic data">
      <MapLayer description="" show="false" show_on_legend="false" min_scale="1e-005" max_scale="2500.0" alpha="100">
       <MaplayerInfo/>
      </MapLayer>
