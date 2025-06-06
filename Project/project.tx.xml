@@ -217,7 +217,7 @@
       </ReceiverAntenna>
       <Channel lock_status="unlocked" dvcc="1" bcc="1" ncc="1" dcch="1" lci="1" use_freq_hop="false" freq_hop_gain="3.0" gsm_diversity_gain_type="1" gsm_fixed_diversity_gain="3.0" gsm_db_per_freq_gain="3.0" gsm_fh_sequence_no="0" gsm_maio_offset="0" gsm_AMR_on="0" gsm_DTX_on="0" gsm_dtx_intrf_gain="3.0" number_of_assignable_downlink_channels="0" number_of_assignable_uplink_channels="0" sat="5970" dcc="1" band="L">
        <ChannelSet assigned_channels="1">
-        <chan num="79"/>
+        <chan num="82"/>
        </ChannelSet>
        <ChannelSetExcluded assigned_channels="0"/>
        <TrafficStatSet num_calc_channel="5">
@@ -325,7 +325,7 @@
       </ReceiverAntenna>
       <Channel lock_status="unlocked" dvcc="1" bcc="1" ncc="1" dcch="1" lci="1" use_freq_hop="false" freq_hop_gain="3.0" gsm_diversity_gain_type="1" gsm_fixed_diversity_gain="3.0" gsm_db_per_freq_gain="3.0" gsm_fh_sequence_no="0" gsm_maio_offset="0" gsm_AMR_on="0" gsm_DTX_on="0" gsm_dtx_intrf_gain="3.0" number_of_assignable_downlink_channels="0" number_of_assignable_uplink_channels="0" sat="5970" dcc="1" band="L">
        <ChannelSet assigned_channels="2">
-        <chan num="66"/>
+        <chan num="7"/>
         <chan num="103"/>
        </ChannelSet>
        <ChannelSetExcluded assigned_channels="0"/>
@@ -1331,7 +1331,7 @@
       </ReceiverAntenna>
       <Channel lock_status="unlocked" dvcc="1" bcc="1" ncc="1" dcch="1" lci="1" use_freq_hop="false" freq_hop_gain="3.0" gsm_diversity_gain_type="1" gsm_fixed_diversity_gain="3.0" gsm_db_per_freq_gain="3.0" gsm_fh_sequence_no="0" gsm_maio_offset="0" gsm_AMR_on="0" gsm_DTX_on="0" gsm_dtx_intrf_gain="3.0" number_of_assignable_downlink_channels="0" number_of_assignable_uplink_channels="0" sat="5970" dcc="1" band="L">
        <ChannelSet assigned_channels="2">
-        <chan num="40"/>
+        <chan num="28"/>
         <chan num="42"/>
        </ChannelSet>
        <ChannelSetExcluded assigned_channels="0"/>
@@ -3349,7 +3349,7 @@
       </ReceiverAntenna>
       <Channel lock_status="unlocked" dvcc="1" bcc="1" ncc="1" dcch="1" lci="1" use_freq_hop="false" freq_hop_gain="3.0" gsm_diversity_gain_type="1" gsm_fixed_diversity_gain="3.0" gsm_db_per_freq_gain="3.0" gsm_fh_sequence_no="0" gsm_maio_offset="0" gsm_AMR_on="0" gsm_DTX_on="0" gsm_dtx_intrf_gain="3.0" number_of_assignable_downlink_channels="0" number_of_assignable_uplink_channels="0" sat="5970" dcc="1" band="L">
        <ChannelSet assigned_channels="1">
-        <chan num="85"/>
+        <chan num="90"/>
        </ChannelSet>
        <ChannelSetExcluded assigned_channels="0"/>
        <TrafficStatSet num_calc_channel="6">

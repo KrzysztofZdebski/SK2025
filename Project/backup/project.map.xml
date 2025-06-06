@@ -3,7 +3,7 @@
  <Print paper_size="1" default_source="7" orientation="2" left_margin="500" right_margin="500" top_margin="750" bottom_margin="500" driver="winspool" device="hp deskjet 970c series" output="lpt1:"/>
  <Views size="1" last_active="0">
   <View name="initial view" top="-23" left="-4" width="1757" height="949" show="true" maximized="true">
-   <ProjectedCoordinateSystem map_center_latitude="44.56712901305445" map_center_longitude="-122.8806906419785" data_entry_display_type="lat/long: deg/min/sec" projected_coordinate_system="Latitude/Longitude" projection="Transverse Mercator" datum="WGS 84"/>
+   <ProjectedCoordinateSystem map_center_latitude="44.6349170016989" map_center_longitude="-123.0232262155485" data_entry_display_type="lat/long: deg/min/sec" projected_coordinate_system="Latitude/Longitude" projection="Transverse Mercator" datum="WGS 84"/>
    <MapTitle title="EDX Wireless" subtitle="Smart Planning for Smart Networks" date="" exhibit="" use_cur_date="false"/>
    <RefGrid reference="grid lines" spacing="30&apos;" show_annotations="true">
     <PenDesc>
@@ -68,7 +68,7 @@
     <note text=""/>
     <note text=""/>
    </LegendOptions>
-   <MapPref measurement_system="Metric" origin="lower left corner" MapScale="1:128976" view_elevation_angle="90.0" view_azimuth="180.0" vert_scale_mult="1.0" base_height="0.0" light_elevation_angle="20.0" light_azimuth="315.0" use_directional_light="false" cursor_height="0.0" show_legend="false" power_display_units="dBW" antenna_gain_type="dBi" align_map_center_with_study_grid="false" display_as_2D="true">
+   <MapPref measurement_system="Metric" origin="lower left corner" MapScale="1:91099" view_elevation_angle="90.0" view_azimuth="180.0" vert_scale_mult="1.0" base_height="0.0" light_elevation_angle="20.0" light_azimuth="315.0" use_directional_light="false" cursor_height="0.0" show_legend="false" power_display_units="dBW" antenna_gain_type="dBi" align_map_center_with_study_grid="false" display_as_2D="true">
     <BorderPenDesc>
      <PenDesc width="0.7" style="solid">
       <Color r="0" g="0" b="0"/>
@@ -585,7 +585,7 @@
      </MapLayer>
     </MapLayerTypeAndLayer>
     <MapLayerTypeAndLayer layer_type="traffic data">
-     <MapLayer description="" show="false" show_on_legend="true" min_scale="1e-005" max_scale="2500.0" alpha="100">
+     <MapLayer description="" show="true" show_on_legend="true" min_scale="1e-005" max_scale="2500.0" alpha="100">
       <MaplayerInfo/>
      </MapLayer>
     </MapLayerTypeAndLayer>
