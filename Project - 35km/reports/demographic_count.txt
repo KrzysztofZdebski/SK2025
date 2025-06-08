@@ -1,0 +1,19 @@
+   White: 1 race: all ages                   0
+   Black: 1 race: all ages                   0
+   Am. Indian: 1 race: all ages              0
+   Asian: 1 race: all ages                   0
+   Hawaiian: 1 race: all ages                0
+   Other: 1 race: all ages                   0
+   2 or more races: all ages                 0
+   Total population: all ages                0
+   Hispanic/Latino pop.: all ages            0
+   Total housing units                       0
+   White: 1 race: 18 & over                  0
+   Black: 1 race: 18 & over                  0
+   Am. Indian: 1 race: 18 & over             0
+   Asian: 1 race: 18 & over                  0
+   Hawaiian: 1 race: 18 & over               0
+   Other: 1 race: 18 & over                  0
+   2 or more races: 18 & over                0
+   Total population: 18 & over               0
+   Hispanic/Latino pop.: 18 & over           0

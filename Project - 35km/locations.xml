@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<LocationList>
+ <Loc type="Unknown" name="Initial" Lat="44.06647777777778" Long="-123.1673166666667"/>
+ <TxList>
+  <Loc type="tx" name="ABAA" Lat="44.09117052165474" Long="-123.2635960951632"/>
+ </TxList>
+ <LinkInfoList/>
+ <CPEList/>
+</LocationList>
