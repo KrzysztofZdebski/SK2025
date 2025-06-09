@@ -75,6 +75,22 @@ def determine_station_from_sectors(sectors: List[str]) -> str:
     # Remove the last digit to get station base name
     return first_sector[:-1] if first_sector else ""
 
+def get_antenna_type(sector_data: Dict[str, Any]) -> str:
+    """Get antenna type, preferring pattern filename over antenna type"""
+    # First try to get the pattern filename
+    pattern_filename = sector_data.get('Transmit antenna pattern filename', '').strip()
+    
+    # If pattern filename exists and is not empty, extract the filename part
+    if pattern_filename:
+        # Extract just the filename from the full path
+        # Example: "C:\PROGRAM FILES\EDX\SIGNALPRO\LIBRARY DATA\PAT\DB872H83.PAT" -> "DB872H83.PAT"
+        filename = pattern_filename.split('\\')[-1] if '\\' in pattern_filename else pattern_filename
+        return filename
+    
+    # If no pattern filename, fall back to antenna type
+    antenna_type = sector_data.get('Transmitter antenna type', '').strip()
+    return antenna_type
+
 def create_csv_table(sectors_data: Dict, traffic_data: Dict, output_file: str):
     """Create CSV file matching the table structure from the image"""
     
@@ -87,7 +103,7 @@ def create_csv_table(sectors_data: Dict, traffic_data: Dict, output_file: str):
             stations[station] = []
         stations[station].append(sector_id)
     
-    # Define CSV headers based on the corrected requirements
+    # Define CSV headers with separated traffic columns
     headers = [
         'Nazwa stacji',  # Station name
         'ID sektora',    # Sector ID
@@ -96,7 +112,8 @@ def create_csv_table(sectors_data: Dict, traffic_data: Dict, output_file: str):
         'Typ anteny nadawczej',     # Transmit antenna type
         'Azymut [°]',              # Azimuth
         'Pochylenie [°]',          # Tilt
-        'Ruch generowany [mErl.]/[Mbps]',  # Generated traffic
+        'Ruch generowany [mErl.]',  # Generated circuit traffic in mErl
+        'Ruch generowany [kbps]',   # Generated packet traffic in kbps
         'Liczba potrzebnych kanałów',      # Required channels
         'Numery przydzielonych kanałów radiowych',  # Assigned channel numbers
         'Rzeczywiste prawdopodobieństwo blokady [%]',  # Actual blocking probability
@@ -127,14 +144,25 @@ def create_csv_table(sectors_data: Dict, traffic_data: Dict, output_file: str):
                 except ValueError:
                     power_w = f"/{power_dbw}dBW"
             
-            antenna_type = sector_data.get('Transmitter antenna type', '').strip()
+            # Get antenna type using the new function
+            antenna_type = get_antenna_type(sector_data)
+            
             azimuth = sector_data.get('Transmit antenna azimuth orientation(degrees)', '').strip()
             tilt = sector_data.get('Transmit antenna mechanical beamtilt(degrees)', '').strip()
             
-            # Traffic data
+            # Traffic data - separate circuit and packet traffic
             circuit_traffic = traffic_info.get('circuit_traffic', '')
             packet_traffic = traffic_info.get('packet_traffic', '')
-            traffic_combined = f"{circuit_traffic}mErl/{packet_traffic}Mbps" if circuit_traffic and packet_traffic else ""
+            
+            # Convert Mbps to kbps
+            packet_traffic_kbps = ""
+            if packet_traffic:
+                try:
+                    mbps_val = float(packet_traffic)
+                    kbps_val = mbps_val * 1000  # Convert Mbps to kbps
+                    packet_traffic_kbps = f"{kbps_val:.2f}"
+                except ValueError:
+                    packet_traffic_kbps = packet_traffic  # Keep original if conversion fails
             
             required_channels = traffic_info.get('required_channels', '')
             
@@ -152,13 +180,14 @@ def create_csv_table(sectors_data: Dict, traffic_data: Dict, output_file: str):
                 sector_id,
                 height,
                 power_w,
-                antenna_type,
+                antenna_type,           # Now uses pattern filename first, then antenna type
                 azimuth,
                 tilt,
-                traffic_combined,
+                circuit_traffic,        # mErl column
+                packet_traffic_kbps,    # kbps column (converted from Mbps)
                 required_channels,
                 channels_set,
-                blocking_probability,  # Now populated with Current Blocking Probability data
+                blocking_probability,
                 ""   # HO neighborhood definition - not available in source data
             ]
             
@@ -195,8 +224,10 @@ def main():
             print(f"\nSector {sector_id}:")
             print(f"  Location: {sectors_data[sector_id].get('Latitude(dd)', 'N/A')}, {sectors_data[sector_id].get('Longitude(dd)', 'N/A')}")
             print(f"  Azimuth: {sectors_data[sector_id].get('Transmit antenna azimuth orientation(degrees)', 'N/A')}°")
+            print(f"  Antenna Type: {get_antenna_type(sectors_data[sector_id])}")
             if sector_id in traffic_data:
-                print(f"  Traffic: {traffic_data[sector_id].get('circuit_traffic', 'N/A')} mErl")
+                print(f"  Circuit Traffic: {traffic_data[sector_id].get('circuit_traffic', 'N/A')} mErl")
+                print(f"  Packet Traffic: {traffic_data[sector_id].get('packet_traffic', 'N/A')} Mbps")
                 print(f"  Channels Set: {traffic_data[sector_id].get('channels_set', 'N/A')}")
                 print(f"  Blocking Probability: {traffic_data[sector_id].get('blocking_probability', 'N/A')}%")
     
