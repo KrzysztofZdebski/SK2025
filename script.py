@@ -65,6 +65,35 @@ def parse_traffic_report(filepath: str) -> Dict[str, Dict[str, Any]]:
     
     return traffic_data
 
+def parse_channels_csv(filepath: str) -> Dict[str, List[str]]:
+    """Parse the channels.csv file to get assigned channels for each sector"""
+    channels_data = {}
+    
+    try:
+        with open(filepath, 'r', encoding='utf-8') as file:
+            reader = csv.DictReader(file)
+            
+            for row in reader:
+                sector_id = row['Sector ID'].strip()
+                
+                # Collect all include channels that are not empty
+                include_channels = []
+                for i in range(1, 7):  # Include Channel1 to Include Channel6
+                    channel_col = f'Include Channel{i}'
+                    if channel_col in row and row[channel_col].strip():
+                        include_channels.append(row[channel_col].strip())
+                
+                # Store the channels for this sector
+                if include_channels:
+                    channels_data[sector_id] = include_channels
+                    
+    except FileNotFoundError:
+        print(f"Warning: channels.csv file not found at {filepath}")
+    except Exception as e:
+        print(f"Warning: Error reading channels.csv: {e}")
+    
+    return channels_data
+
 def determine_station_from_sectors(sectors: List[str]) -> str:
     """Determine station name from sector IDs"""
     if not sectors:
@@ -91,7 +120,7 @@ def get_antenna_type(sector_data: Dict[str, Any]) -> str:
     antenna_type = sector_data.get('Transmitter antenna type', '').strip()
     return antenna_type
 
-def create_csv_table(sectors_data: Dict, traffic_data: Dict, output_file: str):
+def create_csv_table(sectors_data: Dict, traffic_data: Dict, channels_data: Dict, output_file: str):
     """Create CSV file matching the table structure from the image"""
     
     # Group sectors by station (assuming sectors with same prefix belong to same station)
@@ -166,8 +195,9 @@ def create_csv_table(sectors_data: Dict, traffic_data: Dict, output_file: str):
             
             required_channels = traffic_info.get('required_channels', '')
             
-            # Get the number of channels set from traffic data
-            channels_set = traffic_info.get('channels_set', '')
+            # Get assigned channels from channels.csv
+            assigned_channels = channels_data.get(sector_id, [])
+            assigned_channels_str = ', '.join(assigned_channels) if assigned_channels else ""
             
             # Get the current blocking probability from traffic data
             blocking_probability = traffic_info.get('blocking_probability', '')
@@ -186,7 +216,7 @@ def create_csv_table(sectors_data: Dict, traffic_data: Dict, output_file: str):
                 circuit_traffic,        # mErl column
                 packet_traffic_kbps,    # kbps column (converted from Mbps)
                 required_channels,
-                channels_set,
+                assigned_channels_str,  # Assigned channels from channels.csv
                 blocking_probability,
                 ""   # HO neighborhood definition - not available in source data
             ]
@@ -206,6 +236,7 @@ def main():
     # File paths
     tmp_file = "Project/tx_sector_data.tmp"
     traffic_file = "Project/reports/sector_traffic_loading.txt"
+    channels_file = "Project - 35km/channles.csv"  # Note: using the actual filename with typo
     output_csv = "sectors_table.csv"
     
     try:
@@ -216,8 +247,11 @@ def main():
         print("Parsing traffic report...")
         traffic_data = parse_traffic_report(traffic_file)
         
+        print("Parsing channels data...")
+        channels_data = parse_channels_csv(channels_file)
+        
         print("Creating CSV table...")
-        create_csv_table(sectors_data, traffic_data, output_csv)
+        create_csv_table(sectors_data, traffic_data, channels_data, output_csv)
         
         print("\nSample of parsed data:")
         for sector_id in list(sectors_data.keys())[:2]:  # Show first 2 sectors
@@ -225,10 +259,11 @@ def main():
             print(f"  Location: {sectors_data[sector_id].get('Latitude(dd)', 'N/A')}, {sectors_data[sector_id].get('Longitude(dd)', 'N/A')}")
             print(f"  Azimuth: {sectors_data[sector_id].get('Transmit antenna azimuth orientation(degrees)', 'N/A')}°")
             print(f"  Antenna Type: {get_antenna_type(sectors_data[sector_id])}")
+            print(f"  Assigned Channels: {', '.join(channels_data.get(sector_id, [])) if channels_data.get(sector_id) else 'N/A'}")
             if sector_id in traffic_data:
                 print(f"  Circuit Traffic: {traffic_data[sector_id].get('circuit_traffic', 'N/A')} mErl")
                 print(f"  Packet Traffic: {traffic_data[sector_id].get('packet_traffic', 'N/A')} Mbps")
-                print(f"  Channels Set: {traffic_data[sector_id].get('channels_set', 'N/A')}")
+                print(f"  Required Channels: {traffic_data[sector_id].get('required_channels', 'N/A')}")
                 print(f"  Blocking Probability: {traffic_data[sector_id].get('blocking_probability', 'N/A')}%")
     
     except FileNotFoundError as e:
